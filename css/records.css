@@ -1,0 +1,23 @@
+.records-tools { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.4rem; }
+.records-tools .search-box { margin: 0; }
+.records-tools .filter-bar { margin: 0; justify-content: flex-end; }
+.peaks-table { min-width: 900px; }
+.peaks-table tr.pk { background: rgba(47, 127, 140, .07); }
+.peaks-table tr.pk th { color: var(--teal-dark); }
+.peaks-table tr[hidden] { display: none; }
+.peaks-table tbody tr { animation: rowIn .45s var(--ease) both; }
+@keyframes rowIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.table-note { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin: 1rem 0 0; font-size: .88rem; color: var(--slate); }
+.pk-dot { width: 14px; height: 14px; border-radius: 4px; background: rgba(47, 127, 140, .25); border: 1px solid var(--teal); }
+
+.summits .height { font-family: var(--serif); font-size: 1.6rem; color: var(--teal-dark); margin: -.2rem 0 .4rem; }
+.summits h3 { margin-bottom: .2rem; }
+
+.record-card { padding-bottom: 4.2rem; }
+.record-card b { position: absolute; left: 1.7rem; bottom: 1.4rem; font-family: var(--serif); font-size: 1.5rem; color: var(--teal-dark); }
+
+@media (max-width: 760px) {
+  .records-tools { flex-direction: column; align-items: stretch; }
+  .records-tools .filter-bar { justify-content: flex-start; }
+  .records-tools .search-box { width: 100%; }
+}

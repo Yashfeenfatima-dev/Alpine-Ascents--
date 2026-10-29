@@ -1,0 +1,28 @@
+.contact-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+.contact-info h2 { font-size: clamp(1.8rem, 3.6vw, 2.6rem); }
+.contact-lead { color: var(--slate); font-size: 1.05rem; }
+.contact-cards { display: grid; gap: .9rem; margin-top: 1.6rem; }
+.contact-cards li { display: flex; gap: 1rem; align-items: center; padding: 1rem 1.2rem; border: 1px solid var(--fog); border-radius: 16px; background: var(--snow); transition: transform .35s var(--ease), border-color .3s, box-shadow .35s var(--ease); }
+.contact-cards li:hover { transform: translateX(5px); border-color: var(--teal); box-shadow: var(--shadow); }
+.contact-icon { width: 48px; height: 48px; flex: none; display: grid; place-items: center; border-radius: 50%; background: var(--teal-soft); font-size: 1.25rem; }
+.contact-cards h3 { font-family: var(--sans); font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: var(--slate); margin: 0 0 .1rem; }
+.contact-cards p { margin: 0; font-weight: 600; }
+.contact-cards a:hover { color: var(--teal-dark); }
+
+.form-title { font-size: 1.6rem; margin-bottom: .2rem; }
+.form-sub { color: var(--slate); font-size: .9rem; margin-bottom: 1.4rem; }
+.send-btn { width: 100%; }
+
+.contact-success { text-align: center; padding: 2rem .5rem; }
+.contact-success:focus { outline: none; }
+.contact-success[hidden], #contactForm[hidden] { display: none; }
+.success-icon { width: 68px; height: 68px; margin: 0 auto 1.2rem; display: grid; place-items: center; border-radius: 50%; background: var(--teal); color: var(--snow); font-size: 1.6rem; animation: rise .6s var(--ease) both; }
+.contact-success p { color: var(--slate); }
+
+.map-frame { border-radius: 24px; overflow: hidden; border: 1px solid var(--fog); box-shadow: var(--shadow); background: var(--mist); }
+.map-frame iframe { display: block; width: 100%; height: 440px; border: 0; }
+
+@media (max-width: 900px) {
+  .contact-layout { grid-template-columns: 1fr; }
+  .map-frame iframe { height: 340px; }
+}

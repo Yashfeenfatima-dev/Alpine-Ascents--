@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News | Alpine Ascents</title>
+    <meta name="description" content="Latest developments in mountaineering: permit rules, new technology, the environment and record-breaking climbs.">
+    <meta name="theme-color" content="#1a1f24">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1f24'/%3E%3Cg transform='translate%288 10%29'%3E%3Cpath d='M19 42 32.5 17 46 42z' fill='%232f7f8c'/%3E%3Cpath fill-rule='evenodd' fill='%239fd2da' d='M2 42 18 6l16 36h-7.2l-2.6-6H11.8l-2.6 6zM18 24.5l-4.1 8.5h8.2z'/%3E%3Cpath d='m13.3 16.6 2.4-1.9 2.3 2.2 2.3-2.2 2.4 1.9' fill='none' stroke='%231a1f24' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Instrument+Serif&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css?v=8">
+    <link rel="stylesheet" href="../css/news.css?v=8">
+</head>
+
+<body id="top" class="page-news" data-root="../">
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="header">
+        <a href="../index.html" class="logo" aria-label="Alpine Ascents home">
+            <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 48 44"><path class="lm-b" d="M19 42 32.5 17 46 42z"/><path class="lm-cap" d="m28.6 24.2 3.9-7.2 3.9 7.2-1.9-1.2-2 1.7-2-1.7z"/><path class="lm-a" fill-rule="evenodd" d="M2 42 18 6l16 36h-7.2l-2.6-6H11.8l-2.6 6zM18 24.5l-4.1 8.5h8.2z"/><path class="lm-snow" d="m13.3 16.6 2.4-1.9 2.3 2.2 2.3-2.2 2.4 1.9"/></svg></span>
+            <span class="logo-text"><span class="logo-name">ALPINE<br>ASCENTS</span><span class="logo-tag">THE MOUNTAINS ARE CALLING</span></span>
+        </a>
+
+        <nav id="nav" class="site-nav" aria-label="Main">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about%20us.html">About Us</a></li>
+                <li class="nav-item has-dropdown">
+                    <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">Mountaineering <i class="caret" aria-hidden="true"></i></button>
+                    <ul class="dropdown">
+                        <li><a href="history.html"><strong>History</strong><small>From Mont Blanc to the 8,000ers</small></a></li>
+                        <li><a href="adventures.html"><strong>Types & Styles</strong><small>Adventures and climbing styles</small></a></li>
+                        <li><a href="techniques.html"><strong>Techniques</strong><small>Rope, snow, ice and altitude skills</small></a></li>
+                        <li><a href="records.html"><strong>Records</strong><small>Highest peaks and great achievements</small></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">Safety <i class="caret" aria-hidden="true"></i></button>
+                    <ul class="dropdown">
+                        <li><a href="safety.html"><strong>Safety Guidelines</strong><small>General guidelines for every climber</small></a></li>
+                        <li><a href="hazards.html"><strong>Hazards</strong><small>Know the risks before you go</small></a></li>
+                        <li><a href="sheltering.html"><strong>Sheltering</strong><small>Tents, huts, bivouacs and camps</small></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item has-dropdown is-current">
+                    <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">Community <i class="caret" aria-hidden="true"></i></button>
+                    <ul class="dropdown">
+                        <li><a href="clubs.html"><strong>Clubs & Camps</strong><small>Organizations on a world map</small></a></li>
+                        <li><a href="news.html" class="is-current" aria-current="page"><strong>Latest News</strong><small>New developments in the field</small></a></li>
+                        <li><a href="feedback.html"><strong>Feedback</strong><small>Tell us how we are doing</small></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-cta"><a class="btn btn-primary btn-small" href="contact%20us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="visitor-box" title="Visitor count">
+            <span class="visitor-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 20 6.5-11 4 6.5L16 12l5 8z"/><path d="m8 11.5 1.5 1.5 1.5-1.5"/></svg></span>
+            <div>
+                <small>VISITORS</small>
+                <strong id="visitorCount">11</strong>
+            </div>
+        </div>
+
+        <button id="menuToggle" class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+    </header>
+
+    <main id="main">
+
+        <section class="page-hero">
+            <div class="page-hero-bg" style="--hero-img: url('https://images.unsplash.com/photo-1637580980556-085dee659c7e?auto=format&fit=crop&w=1920&q=80')" aria-hidden="true"></div>
+            <div class="page-hero-content">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><span>Community</span></li>
+                        <li><span aria-current="page">Latest News</span></li>
+                    </ol>
+                </nav>
+                <p class="eyebrow">LATEST DEVELOPMENTS IN THE FIELD</p>
+                <h1>NEWS FROM THE<br>MOUNTAINS<span>.</span></h1>
+                <p class="lead">New rules, new technology and a changing climate. Here is what is shaping mountaineering today.</p>
+                <div class="hero-buttons">
+                    <a href="#stories" class="btn btn-ghost">Read The News &#8595;</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap split">
+                <div class="prose reveal">
+                    <p class="eyebrow">A SPORT THAT KEEPS CHANGING</p>
+                    <h2>What Is New In Mountaineering.</h2>
+                    <p>Mountaineering may be one of the oldest outdoor sports, but it changes every season. Governments update permit rules, engineers design lighter gear, forecasters predict summit windows more accurately and a warming climate reshapes the mountains themselves.</p>
+                    <p>This section collects the most important recent developments, grouped by topic. Use the filters to focus on what interests you, and open any story to read the details.</p>
+                    <div class="callout"><p><strong>Last reviewed:</strong> October 2026. Rules and fees change often, so always confirm them with official sources before you travel.</p></div>
+                </div>
+                <div class="split-media reveal">
+                    <img src="https://images.unsplash.com/photo-1637580980556-085dee659c7e?auto=format&fit=crop&w=1920&q=80" alt="Fitz Roy glowing at dawn in Patagonia" loading="lazy">
+                    <span class="media-tag">NEW SEASON, NEW CHALLENGES</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="stories">
+            <div class="section-heading reveal">
+                <p class="eyebrow">LATEST DEVELOPMENTS</p>
+                <h2>News From The Mountains.</h2>
+                <p>Ten developments that are shaping how people climb today.</p>
+            </div>
+
+            <div class="filter-bar" role="group" aria-label="Filter news by topic">
+                <button type="button" class="filter-btn active" data-topic="all" aria-pressed="true">All</button>
+                <button type="button" class="filter-btn" data-topic="rules" aria-pressed="false">Rules &amp; Permits</button>
+                <button type="button" class="filter-btn" data-topic="tech" aria-pressed="false">Technology</button>
+                <button type="button" class="filter-btn" data-topic="environment" aria-pressed="false">Environment</button>
+                <button type="button" class="filter-btn" data-topic="records" aria-pressed="false">Records &amp; Sport</button>
+            </div>
+
+            <div class="news-grid wrap">
+                <article class="news-card reveal" data-topic="rules">
+                    <div class="news-meta"><span class="tag">Rules &amp; Permits</span><time datetime="2025-09">September 2025</time></div>
+                    <h3>Everest Permit Fee Rises To US$15,000</h3>
+                    <p>Nepal increased the royalty for foreign climbers on the normal spring route of Everest from US$11,000 to US$15,000, the first rise in about a decade.</p>
+                    <details><summary>Read more</summary><p>Fees for the autumn and winter seasons went up as well. The government says the extra money will support mountain safety, waste management and the welfare of climbing workers. Debate also continues in Nepal about requiring Everest applicants to have climbed another high Himalayan peak first.</p></details>
+                </article>
+
+                <article class="news-card reveal" data-topic="rules">
+                    <div class="news-meta"><span class="tag">Rules &amp; Permits</span><time datetime="2024-03">Since 2024</time></div>
+                    <h3>Carry Your Waste Off Everest</h3>
+                    <p>Climbers on Everest and Lhotse must now use special waste bags above base camp and bring them back down to be checked.</p>
+                    <details><summary>Read more</summary><p>The rule was introduced by the local rural municipality in the Khumbu region. At high camps, where it is too cold for waste to break down, human waste had become a serious health and environmental problem. Bags are handed out at base camp and inspected on return.</p></details>
+                </article>
+
+                <article class="news-card reveal" data-topic="tech">
+                    <div class="news-meta"><span class="tag">Technology</span><time datetime="2024-04">2024 &ndash; Today</time></div>
+                    <h3>Drones Over The Khumbu Icefall</h3>
+                    <p>Heavy-lift cargo drones have been trialled to carry oxygen bottles, ropes and ladders from base camp to Camp 1, and to fly rubbish back down.</p>
+                    <details><summary>Read more</summary><p>The Khumbu Icefall is one of the most dangerous sections of Everest, and Sherpa workers cross it many times each season to supply higher camps. Every load a drone carries is one fewer trip through the icefall for a person. Regulators are still deciding how drones should be used on the mountain.</p></details>
+                </article>
+
+                <article class="news-card reveal" data-topic="tech">
+                    <div class="news-meta"><span class="tag">Technology</span><time datetime="2022">2022 &ndash; Today</time></div>
+                    <h3>Satellite SOS In Your Pocket</h3>
+                    <p>Many new smartphones can now send emergency messages by satellite, so climbers can call for help far beyond mobile coverage.</p>
+                    <details><summary>Read more</summary><p>Dedicated satellite messengers have existed for years, but built-in phone features have made the technology available to far more people. Rescue teams warn that a phone is not a plan: batteries die in the cold, and help can still take many hours or days to arrive.</p></details>
+                </article>
+
+                <article class="news-card reveal" data-topic="tech">
+                    <div class="news-meta"><span class="tag">Technology</span><time datetime="2025">Ongoing</time></div>
+                    <h3>Lighter, Stronger Gear</h3>
+                    <p>Ultralight fabrics, thin high-strength ropes and slings, and lighter crampons and ice tools let climbers move faster with less weight.</p>
+                    <details><summary>Read more</summary><p>Lighter gear makes alpine-style climbing possible on bigger mountains. The UIAA continues to test equipment such as ropes, harnesses and helmets so climbers can trust that lighter does not mean weaker.</p></details>
+                </article>
+
+                <article class="news-card reveal" data-topic="tech">
+                    <div class="news-meta"><span class="tag">Technology</span><time datetime="2025-05">May 2025</time></div>
+                    <h3>The Xenon Debate</h3>
+                    <p>A small British team reached the summit of Everest about a week after leaving London, after pre-acclimatizing at home and inhaling xenon gas.</p>
+                    <details><summary>Read more</summary><p>Supporters say fast "flash" expeditions reduce the time climbers spend in danger. Many doctors and mountain medicine experts, including the UIAA Medical Commission, have warned that there is no good evidence xenon helps acclimatization and that it may carry risks.</p></details>
+                </article>
+
+                <article class="news-card reveal" data-topic="environment">
+                    <div class="news-meta"><span class="tag">Environment</span><time datetime="2023-06">June 2023</time></div>
+                    <h3>Himalayan Glaciers Are Shrinking Fast</h3>
+                    <p>A major study by ICIMOD found that glaciers in the Hindu Kush Himalaya could lose up to 80% of their volume by 2100 if emissions stay high.</p>
+                    <details><summary>Read more</summary><p>Glaciers in the region melted much faster in the 2010s than in the decade before. For climbers this means more rockfall, more unstable icefalls and new glacial lakes that can burst. For nearly two billion people downstream, it threatens water supplies.</p></details>
+                </article>
+
+                <article class="news-card reveal" data-topic="environment">
+                    <div class="news-meta"><span class="tag">Environment</span><time datetime="2025">Every Season</time></div>
+                    <h3>Cleaning The World's Highest Peaks</h3>
+                    <p>Clean-up campaigns now remove tonnes of rubbish, old ropes and abandoned tents from Everest, K2 and other popular mountains each year.</p>
+                    <details><summary>Read more</summary><p>Many expeditions must now pay a refundable garbage deposit that they get back only when they bring their waste down. Local climbers and porters lead much of the clean-up work at high camps.</p></details>
+                </article>
+
+                <article class="news-card reveal" data-topic="records">
+                    <div class="news-meta"><span class="tag">Records &amp; Sport</span><time datetime="2025-05">May 2025</time></div>
+                    <h3>Kami Rita Sherpa Reaches 31 Summits</h3>
+                    <p>The Nepali guide extended his own record for the most ascents of Mount Everest to 31.</p>
+                    <details><summary>Read more</summary><p>Kami Rita first stood on top of Everest in 1994 and has guided clients there almost every year since. His record shows the central role Sherpa guides play in modern Himalayan climbing.</p></details>
+                </article>
+
+                <article class="news-card reveal" data-topic="records">
+                    <div class="news-meta"><span class="tag">Records &amp; Sport</span><time datetime="2026-02">February 2026</time></div>
+                    <h3>Ski Mountaineering At The Olympics</h3>
+                    <p>Ski mountaineering, or "skimo", made its Olympic debut at the 2026 Winter Games in Milan and Cortina, Italy.</p>
+                    <details><summary>Read more</summary><p>Athletes race uphill on skis with climbing skins, run sections with skis on their backs and then ski back down. Its inclusion has brought new attention to mountain sports and to avalanche safety.</p></details>
+                </article>
+            </div>
+            <p class="empty-note" id="newsEmpty" hidden>No stories in this topic yet.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-heading reveal">
+                <p class="eyebrow">STAY INFORMED</p>
+                <h2>Trusted Sources.</h2>
+                <p>For the latest official information, check these organizations before every expedition.</p>
+            </div>
+            <div class="card-grid wrap">
+                <a class="info-card reveal" href="https://www.theuiaa.org/" target="_blank" rel="noopener noreferrer"><span class="tag">Global</span><h3>UIAA &#8599;</h3><p>Safety standards, medical advice and news from the international federation.</p></a>
+                <a class="info-card reveal" href="https://www.icimod.org/" target="_blank" rel="noopener noreferrer"><span class="tag">Science</span><h3>ICIMOD &#8599;</h3><p>Research on glaciers, climate and communities in the Hindu Kush Himalaya.</p></a>
+                <a class="info-card reveal" href="https://www.alpineclub.org.pk/" target="_blank" rel="noopener noreferrer"><span class="tag">Pakistan</span><h3>Alpine Club of Pakistan &#8599;</h3><p>Expedition news and rules for climbing in the Karakoram and Himalaya.</p></a>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="reveal">
+                <p class="eyebrow">HAVE A STORY TO SHARE?</p>
+                <h2>Tell Us What We Missed.</h2>
+                <p>Know about a new rule, a record or a piece of gear we should add? Send us your feedback.</p>
+                <div class="button-row">
+                    <a href="feedback.html" class="btn btn-primary">Send Feedback &#8599;</a>
+                    <a href="records.html" class="btn btn-outline">See All Records</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="ticker" aria-label="Live date, time and location">
+        <div class="ticker-label"><i></i><b>LIVE</b></div>
+        <div class="ticker-window">
+            <div class="ticker-track" aria-live="off"><span>ALPINE ASCENTS</span><span aria-hidden="true">ALPINE ASCENTS</span></div>
+        </div>
+        <button type="button" class="ticker-loc" id="tickerLocate">Share location</button>
+    </div>
+
+    <div class="mountain-divider" aria-hidden="true">
+        <svg viewBox="0 0 2400 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path class="m-back" d="M0,140 L0,95 L90,60 L170,80 L260,35 L350,70 L450,25 L540,66 L640,48 L740,84 L850,30 L950,70 L1050,45 L1130,78 L1200,95 L1290,60 L1370,80 L1460,35 L1550,70 L1650,25 L1740,66 L1840,48 L1940,84 L2050,30 L2150,70 L2250,45 L2330,78 L2400,95 L2400,140 Z"/><path class="m-mid" d="M0,140 L0,110 L120,70 L210,95 L330,55 L430,92 L560,40 L660,88 L780,60 L880,100 L1000,52 L1100,90 L1200,110 L1320,70 L1410,95 L1530,55 L1630,92 L1760,40 L1860,88 L1980,60 L2080,100 L2200,52 L2300,90 L2400,110 L2400,140 Z"/><path class="m-front" d="M0,140 L0,125 L100,100 L200,118 L310,90 L420,120 L520,98 L640,124 L760,96 L880,122 L980,102 L1100,124 L1200,125 L1300,100 L1400,118 L1510,90 L1620,120 L1720,98 L1840,124 L1960,96 L2080,122 L2180,102 L2300,124 L2400,125 L2400,140 Z"/></svg>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <a href="../index.html" class="logo" aria-label="Alpine Ascents home">
+                    <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 48 44"><path class="lm-b" d="M19 42 32.5 17 46 42z"/><path class="lm-cap" d="m28.6 24.2 3.9-7.2 3.9 7.2-1.9-1.2-2 1.7-2-1.7z"/><path class="lm-a" fill-rule="evenodd" d="M2 42 18 6l16 36h-7.2l-2.6-6H11.8l-2.6 6zM18 24.5l-4.1 8.5h8.2z"/><path class="lm-snow" d="m13.3 16.6 2.4-1.9 2.3 2.2 2.3-2.2 2.4 1.9"/></svg></span>
+                    <span class="logo-text"><span class="logo-name">ALPINE<br>ASCENTS</span><span class="logo-tag">THE MOUNTAINS ARE CALLING</span></span>
+                </a>
+                <p>Detailed, honest information about mountaineering: its history, styles, techniques, hazards, records and the people who keep the sport alive.</p>
+                <span class="footer-motto">EXPLORE RESPONSIBLY · RESPECT THE MOUNTAINS</span>
+            </div>
+            <div>
+                <h4>Mountaineering</h4>
+                <ul class="footer-links">
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="adventures.html">Types & Styles</a></li>
+                    <li><a href="techniques.html">Techniques</a></li>
+                    <li><a href="records.html">Records</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Safety</h4>
+                <ul class="footer-links">
+                    <li><a href="safety.html">Safety Guidelines</a></li>
+                    <li><a href="hazards.html">Hazards</a></li>
+                    <li><a href="sheltering.html">Sheltering</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Community</h4>
+                <ul class="footer-links">
+                    <li><a href="about%20us.html">About Us</a></li>
+                    <li><a href="clubs.html">Clubs & Camps</a></li>
+                    <li><a href="news.html" class="is-current">Latest News</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="contact%20us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact-col">
+                <h4>Get In Touch</h4>
+                <ul class="footer-contact">
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Karachi, Pakistan</span></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@alpineascents.example">info@alpineascents.example</a></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+923211234567">+92 321 1234567</a></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Mon to Sat, 9:00 am to 6:00 pm</span></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/alpineascents.pk" target="_blank" rel="noopener" aria-label="Instagram @alpineascents.pk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
+                    <a href="https://www.facebook.com/alpineascents.pk" target="_blank" rel="noopener" aria-label="Facebook alpineascents.pk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8.5a.5.5 0 0 1 .5-.5z"/></svg><span>Facebook</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Alpine Ascents. Educational project by Group D.</p>
+            <a href="#top" class="to-top">Back to top &uarr;</a>
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=8"></script>
+    <script src="../js/news.js?v=8"></script>
+
+</body>
+</html>

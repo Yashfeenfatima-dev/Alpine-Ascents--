@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountaineering Records | Alpine Ascents</title>
+    <meta name="description" content="The fourteen 8,000-metre peaks, the Seven Summits and record-setting climbers in mountaineering history.">
+    <meta name="theme-color" content="#1a1f24">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1f24'/%3E%3Cg transform='translate%288 10%29'%3E%3Cpath d='M19 42 32.5 17 46 42z' fill='%232f7f8c'/%3E%3Cpath fill-rule='evenodd' fill='%239fd2da' d='M2 42 18 6l16 36h-7.2l-2.6-6H11.8l-2.6 6zM18 24.5l-4.1 8.5h8.2z'/%3E%3Cpath d='m13.3 16.6 2.4-1.9 2.3 2.2 2.3-2.2 2.4 1.9' fill='none' stroke='%231a1f24' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Instrument+Serif&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css?v=8">
+    <link rel="stylesheet" href="../css/records.css?v=8">
+</head>
+
+<body id="top" class="page-records" data-root="../">
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="header">
+        <a href="../index.html" class="logo" aria-label="Alpine Ascents home">
+            <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 48 44"><path class="lm-b" d="M19 42 32.5 17 46 42z"/><path class="lm-cap" d="m28.6 24.2 3.9-7.2 3.9 7.2-1.9-1.2-2 1.7-2-1.7z"/><path class="lm-a" fill-rule="evenodd" d="M2 42 18 6l16 36h-7.2l-2.6-6H11.8l-2.6 6zM18 24.5l-4.1 8.5h8.2z"/><path class="lm-snow" d="m13.3 16.6 2.4-1.9 2.3 2.2 2.3-2.2 2.4 1.9"/></svg></span>
+            <span class="logo-text"><span class="logo-name">ALPINE<br>ASCENTS</span><span class="logo-tag">THE MOUNTAINS ARE CALLING</span></span>
+        </a>
+
+        <nav id="nav" class="site-nav" aria-label="Main">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about%20us.html">About Us</a></li>
+                <li class="nav-item has-dropdown is-current">
+                    <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">Mountaineering <i class="caret" aria-hidden="true"></i></button>
+                    <ul class="dropdown">
+                        <li><a href="history.html"><strong>History</strong><small>From Mont Blanc to the 8,000ers</small></a></li>
+                        <li><a href="adventures.html"><strong>Types & Styles</strong><small>Adventures and climbing styles</small></a></li>
+                        <li><a href="techniques.html"><strong>Techniques</strong><small>Rope, snow, ice and altitude skills</small></a></li>
+                        <li><a href="records.html" class="is-current" aria-current="page"><strong>Records</strong><small>Highest peaks and great achievements</small></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">Safety <i class="caret" aria-hidden="true"></i></button>
+                    <ul class="dropdown">
+                        <li><a href="safety.html"><strong>Safety Guidelines</strong><small>General guidelines for every climber</small></a></li>
+                        <li><a href="hazards.html"><strong>Hazards</strong><small>Know the risks before you go</small></a></li>
+                        <li><a href="sheltering.html"><strong>Sheltering</strong><small>Tents, huts, bivouacs and camps</small></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item has-dropdown">
+                    <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">Community <i class="caret" aria-hidden="true"></i></button>
+                    <ul class="dropdown">
+                        <li><a href="clubs.html"><strong>Clubs & Camps</strong><small>Organizations on a world map</small></a></li>
+                        <li><a href="news.html"><strong>Latest News</strong><small>New developments in the field</small></a></li>
+                        <li><a href="feedback.html"><strong>Feedback</strong><small>Tell us how we are doing</small></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-cta"><a class="btn btn-primary btn-small" href="contact%20us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="visitor-box" title="Visitor count">
+            <span class="visitor-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 20 6.5-11 4 6.5L16 12l5 8z"/><path d="m8 11.5 1.5 1.5 1.5-1.5"/></svg></span>
+            <div>
+                <small>VISITORS</small>
+                <strong id="visitorCount">11</strong>
+            </div>
+        </div>
+
+        <button id="menuToggle" class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+    </header>
+
+    <main id="main">
+
+        <section class="page-hero">
+            <div class="page-hero-bg" style="--hero-img: url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1920&q=80')" aria-hidden="true"></div>
+            <div class="page-hero-content">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><span>Mountaineering</span></li>
+                        <li><span aria-current="page">Records</span></li>
+                    </ol>
+                </nav>
+                <p class="eyebrow">THE WORLD ABOVE THE CLOUDS</p>
+                <h1>RECORDS &amp;<br>GREAT PEAKS<span>.</span></h1>
+                <p class="lead">The highest mountains on Earth and the climbers who pushed the limits of what is possible.</p>
+                <div class="hero-buttons">
+                    <a href="#eight-thousanders" class="btn btn-ghost">The 8,000ers &#8595;</a>
+                    <a href="#seven-summits" class="btn btn-ghost">Seven Summits</a>
+                    <a href="#human-records" class="btn btn-light">Human Records</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap split">
+                <div class="prose reveal">
+                    <p class="eyebrow">MEASURING THE MOUNTAINS</p>
+                    <h2>Records Tell The Story Of The Sport.</h2>
+                    <p>Records in mountaineering are not only about speed or height. They mark the moments when climbers proved something new was possible: the first time a summit was reached, the first ascent without bottled oxygen, the first climb in the depth of winter.</p>
+                    <p>This page collects the most important records: the fourteen peaks above 8,000 metres, the highest mountain on every continent, and the human achievements that shaped climbing history.</p>
+                    <div class="callout"><p><strong>Note:</strong> heights are rounded to the nearest metre and can differ slightly between surveys. Everest's official height of 8,848.86 m was announced jointly by Nepal and China in 2020.</p></div>
+                </div>
+                <div class="split-media reveal">
+                    <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1920&q=80" alt="Ama Dablam at dawn">
+                    <span class="media-tag">AMA DABLAM, NEPAL</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="records-section" style="--band-img: url('https://images.unsplash.com/photo-1486911278844-a81c5267e227?auto=format&fit=crop&w=1920&q=80')">
+            <div class="records-overlay reveal">
+                <p class="eyebrow">AT A GLANCE</p>
+                <h2>The Numbers That Matter.</h2>
+                <div class="record-grid">
+                    <div><strong>8,849 m</strong><span>Mount Everest, the highest point on Earth</span></div>
+                    <div><strong>14</strong><span>Peaks rise above 8,000 metres</span></div>
+                    <div><strong>5</strong><span>Of them stand in Pakistan</span></div>
+                    <div><strong>31</strong><span>Everest summits by Kami Rita Sherpa (to 2025)</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="eight-thousanders">
+            <div class="section-heading reveal">
+                <p class="eyebrow">THE FOURTEEN GIANTS</p>
+                <h2>The 8,000-Metre Peaks.</h2>
+                <p>All fourteen stand in the Himalaya and Karakoram of Asia. Sort the table by clicking a heading, or search for a peak or country.</p>
+            </div>
+
+            <div class="wrap">
+                <div class="records-tools reveal">
+                    <label class="search-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                        <input type="search" id="peakSearch" placeholder="Search peaks, countries or climbers" aria-label="Search the 8,000-metre peaks">
+                    </label>
+                    <div class="filter-bar" role="group" aria-label="Filter by range">
+                        <button type="button" class="filter-btn active" data-range="all" aria-pressed="true">All Ranges</button>
+                        <button type="button" class="filter-btn" data-range="Himalaya" aria-pressed="false">Himalaya</button>
+                        <button type="button" class="filter-btn" data-range="Karakoram" aria-pressed="false">Karakoram</button>
+                        <button type="button" class="filter-btn" data-range="pakistan" aria-pressed="false">In Pakistan</button>
+                    </div>
+                </div>
+
+                <div class="table-wrap reveal">
+                    <table class="data-table peaks-table" id="peaksTable">
+                        <thead>
+                            <tr>
+                                <th scope="col"><button type="button" class="sort-btn" data-key="rank" data-type="num">Rank</button></th>
+                                <th scope="col"><button type="button" class="sort-btn" data-key="name" data-type="text">Peak</button></th>
+                                <th scope="col"><button type="button" class="sort-btn" data-key="height" data-type="num">Height</button></th>
+                                <th scope="col">Range</th>
+                                <th scope="col">Country</th>
+                                <th scope="col"><button type="button" class="sort-btn" data-key="year" data-type="num">First Ascent</button></th>
+                                <th scope="col">First Climbed By</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-rank="1" data-name="Everest" data-height="8849" data-year="1953" data-range="Himalaya"><td class="num">1</td><th scope="row">Mount Everest</th><td class="num">8,849 m</td><td>Himalaya</td><td>Nepal / China</td><td class="num">1953</td><td>Edmund Hillary, Tenzing Norgay</td></tr>
+                            <tr data-rank="2" data-name="K2" data-height="8611" data-year="1954" data-range="Karakoram" class="pk"><td class="num">2</td><th scope="row">K2</th><td class="num">8,611 m</td><td>Karakoram</td><td>Pakistan / China</td><td class="num">1954</td><td>Lino Lacedelli, Achille Compagnoni</td></tr>
+                            <tr data-rank="3" data-name="Kangchenjunga" data-height="8586" data-year="1955" data-range="Himalaya"><td class="num">3</td><th scope="row">Kangchenjunga</th><td class="num">8,586 m</td><td>Himalaya</td><td>Nepal / India</td><td class="num">1955</td><td>Joe Brown, George Band</td></tr>
+                            <tr data-rank="4" data-name="Lhotse" data-height="8516" data-year="1956" data-range="Himalaya"><td class="num">4</td><th scope="row">Lhotse</th><td class="num">8,516 m</td><td>Himalaya</td><td>Nepal / China</td><td class="num">1956</td><td>Ernst Reiss, Fritz Luchsinger</td></tr>
+                            <tr data-rank="5" data-name="Makalu" data-height="8485" data-year="1955" data-range="Himalaya"><td class="num">5</td><th scope="row">Makalu</th><td class="num">8,485 m</td><td>Himalaya</td><td>Nepal / China</td><td class="num">1955</td><td>Lionel Terray, Jean Couzy</td></tr>
+                            <tr data-rank="6" data-name="Cho Oyu" data-height="8188" data-year="1954" data-range="Himalaya"><td class="num">6</td><th scope="row">Cho Oyu</th><td class="num">8,188 m</td><td>Himalaya</td><td>Nepal / China</td><td class="num">1954</td><td>Herbert Tichy, Joseph J&ouml;chler, Pasang Dawa Lama</td></tr>
+                            <tr data-rank="7" data-name="Dhaulagiri" data-height="8167" data-year="1960" data-range="Himalaya"><td class="num">7</td><th scope="row">Dhaulagiri I</th><td class="num">8,167 m</td><td>Himalaya</td><td>Nepal</td><td class="num">1960</td><td>Swiss-Austrian team led by Max Eiselin</td></tr>
+                            <tr data-rank="8" data-name="Manaslu" data-height="8163" data-year="1956" data-range="Himalaya"><td class="num">8</td><th scope="row">Manaslu</th><td class="num">8,163 m</td><td>Himalaya</td><td>Nepal</td><td class="num">1956</td><td>Toshio Imanishi, Gyalzen Norbu</td></tr>
+                            <tr data-rank="9" data-name="Nanga Parbat" data-height="8126" data-year="1953" data-range="Himalaya" class="pk"><td class="num">9</td><th scope="row">Nanga Parbat</th><td class="num">8,126 m</td><td>Himalaya</td><td>Pakistan</td><td class="num">1953</td><td>Hermann Buhl (solo summit push)</td></tr>
+                            <tr data-rank="10" data-name="Annapurna" data-height="8091" data-year="1950" data-range="Himalaya"><td class="num">10</td><th scope="row">Annapurna I</th><td class="num">8,091 m</td><td>Himalaya</td><td>Nepal</td><td class="num">1950</td><td>Maurice Herzog, Louis Lachenal</td></tr>
+                            <tr data-rank="11" data-name="Gasherbrum I" data-height="8080" data-year="1958" data-range="Karakoram" class="pk"><td class="num">11</td><th scope="row">Gasherbrum I</th><td class="num">8,080 m</td><td>Karakoram</td><td>Pakistan / China</td><td class="num">1958</td><td>Pete Schoening, Andy Kauffman</td></tr>
+                            <tr data-rank="12" data-name="Broad Peak" data-height="8051" data-year="1957" data-range="Karakoram" class="pk"><td class="num">12</td><th scope="row">Broad Peak</th><td class="num">8,051 m</td><td>Karakoram</td><td>Pakistan / China</td><td class="num">1957</td><td>Hermann Buhl, Kurt Diemberger, Marcus Schmuck, Fritz Wintersteller</td></tr>
+                            <tr data-rank="13" data-name="Gasherbrum II" data-height="8035" data-year="1956" data-range="Karakoram" class="pk"><td class="num">13</td><th scope="row">Gasherbrum II</th><td class="num">8,035 m</td><td>Karakoram</td><td>Pakistan / China</td><td class="num">1956</td><td>Fritz Moravec, Josef Larch, Hans Willenpart</td></tr>
+                            <tr data-rank="14" data-name="Shishapangma" data-height="8027" data-year="1964" data-range="Himalaya"><td class="num">14</td><th scope="row">Shishapangma</th><td class="num">8,027 m</td><td>Himalaya</td><td>China (Tibet)</td><td class="num">1964</td><td>Chinese expedition led by Xu Jing</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note"><span class="pk-dot"></span> Highlighted rows are peaks in Pakistan. <span id="peakCount">14 of 14 peaks shown.</span></p>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="seven-summits">
+            <div class="section-heading reveal">
+                <p class="eyebrow">ONE ON EVERY CONTINENT</p>
+                <h2>The Seven Summits.</h2>
+                <p>Climbing the highest mountain on each continent became a famous challenge after Dick Bass completed the list in 1985.</p>
+            </div>
+
+            <div class="card-grid cols-4 wrap summits">
+                <article class="info-card reveal"><span class="tag">Asia</span><h3>Everest</h3><p class="height">8,849 m</p><p>Nepal / China. The highest point on Earth.</p></article>
+                <article class="info-card reveal"><span class="tag">South America</span><h3>Aconcagua</h3><p class="height">6,961 m</p><p>Argentina. The highest peak outside Asia.</p></article>
+                <article class="info-card reveal"><span class="tag">North America</span><h3>Denali</h3><p class="height">6,190 m</p><p>Alaska, USA. Famous for brutal cold and storms.</p></article>
+                <article class="info-card reveal"><span class="tag">Africa</span><h3>Kilimanjaro</h3><p class="height">5,895 m</p><p>Tanzania. A dormant volcano climbed on foot.</p></article>
+                <article class="info-card reveal"><span class="tag">Europe</span><h3>Elbrus</h3><p class="height">5,642 m</p><p>Russia. A double-coned volcano in the Caucasus.</p></article>
+                <article class="info-card reveal"><span class="tag">Antarctica</span><h3>Vinson</h3><p class="height">4,892 m</p><p>The remote, frozen roof of Antarctica.</p></article>
+                <article class="info-card reveal"><span class="tag">Oceania</span><h3>Puncak Jaya</h3><p class="height">4,884 m</p><p>Indonesia. Also called Carstensz Pyramid.</p></article>
+                <article class="info-card reveal"><span class="tag">Australia</span><h3>Kosciuszko</h3><p class="height">2,228 m</p><p>Used in the original "Bass list" instead of Puncak Jaya.</p></article>
+            </div>
+        </section>
+
+        <section class="section" id="human-records">
+            <div class="section-heading reveal">
+                <p class="eyebrow">HUMAN ACHIEVEMENTS</p>
+                <h2>Record-Setting Climbers.</h2>
+                <p>Milestones that changed what people believed was possible in the mountains.</p>
+            </div>
+
+            <div class="card-grid wrap">
+                <article class="info-card record-card reveal"><span class="tag">First Ascent</span><h3>First On Everest</h3><p>Edmund Hillary of New Zealand and Tenzing Norgay of Nepal reached the summit on 29 May 1953.</p><b>1953</b></article>
+                <article class="info-card record-card reveal"><span class="tag">Women</span><h3>First Woman On Everest</h3><p>Junko Tabei of Japan reached the summit on 16 May 1975 and later climbed all Seven Summits.</p><b>1975</b></article>
+                <article class="info-card record-card reveal"><span class="tag">No Oxygen</span><h3>All 14 Without Oxygen</h3><p>Reinhold Messner of Italy became the first person to climb all fourteen 8,000ers, all without bottled oxygen.</p><b>1986</b></article>
+                <article class="info-card record-card reveal"><span class="tag">Winter</span><h3>Everest In Winter</h3><p>Krzysztof Wielicki and Leszek Cichy of Poland made the first winter ascent on 17 February 1980.</p><b>1980</b></article>
+                <article class="info-card record-card reveal"><span class="tag">Most Summits</span><h3>31 Times On Everest</h3><p>Kami Rita Sherpa of Nepal holds the record for the most ascents of Everest, reaching 31 summits by 2025.</p><b>31&times;</b></article>
+                <article class="info-card record-card reveal"><span class="tag">Speed</span><h3>14 Peaks In 92 Days</h3><p>Kristin Harila of Norway and Tenjen (Lama) Sherpa of Nepal climbed all fourteen 8,000ers in just 92 days.</p><b>2023</b></article>
+                <article class="info-card record-card reveal"><span class="tag">Pakistan</span><h3>First Pakistani On K2</h3><p>Ashraf Aman became the first Pakistani to climb K2, as part of a Japanese expedition.</p><b>1977</b></article>
+                <article class="info-card record-card reveal"><span class="tag">Pakistan</span><h3>First Pakistani On Everest</h3><p>Nazir Sabir, who had already climbed K2 in 1981, became the first Pakistani to reach Everest's summit.</p><b>2000</b></article>
+                <article class="info-card record-card reveal"><span class="tag">Pakistan</span><h3>First Pakistani Woman On Everest</h3><p>Samina Baig of Hunza reached the summit and later completed the Seven Summits.</p><b>2013</b></article>
+                <article class="info-card record-card reveal"><span class="tag">Age</span><h3>Oldest On Everest</h3><p>Yuichiro Miura of Japan reached the summit at the age of 80.</p><b>80 yrs</b></article>
+                <article class="info-card record-card reveal"><span class="tag">Age</span><h3>Youngest On Everest</h3><p>Jordan Romero of the USA reached the summit at the age of 13.</p><b>13 yrs</b></article>
+                <article class="info-card record-card reveal"><span class="tag">Women</span><h3>Most Summits By A Woman</h3><p>Lhakpa Sherpa of Nepal has climbed Everest ten times, more than any other woman.</p><b>10&times;</b></article>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="reveal">
+                <p class="eyebrow">BEHIND EVERY RECORD</p>
+                <h2>Years Of Preparation.</h2>
+                <p>Every record above was built on careful technique, slow acclimatization and respect for the hazards of high mountains.</p>
+                <div class="button-row">
+                    <a href="history.html" class="btn btn-primary">Read The History &#8599;</a>
+                    <a href="techniques.html" class="btn btn-outline">Learn The Techniques</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="ticker" aria-label="Live date, time and location">
+        <div class="ticker-label"><i></i><b>LIVE</b></div>
+        <div class="ticker-window">
+            <div class="ticker-track" aria-live="off"><span>ALPINE ASCENTS</span><span aria-hidden="true">ALPINE ASCENTS</span></div>
+        </div>
+        <button type="button" class="ticker-loc" id="tickerLocate">Share location</button>
+    </div>
+
+    <div class="mountain-divider" aria-hidden="true">
+        <svg viewBox="0 0 2400 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path class="m-back" d="M0,140 L0,95 L90,60 L170,80 L260,35 L350,70 L450,25 L540,66 L640,48 L740,84 L850,30 L950,70 L1050,45 L1130,78 L1200,95 L1290,60 L1370,80 L1460,35 L1550,70 L1650,25 L1740,66 L1840,48 L1940,84 L2050,30 L2150,70 L2250,45 L2330,78 L2400,95 L2400,140 Z"/><path class="m-mid" d="M0,140 L0,110 L120,70 L210,95 L330,55 L430,92 L560,40 L660,88 L780,60 L880,100 L1000,52 L1100,90 L1200,110 L1320,70 L1410,95 L1530,55 L1630,92 L1760,40 L1860,88 L1980,60 L2080,100 L2200,52 L2300,90 L2400,110 L2400,140 Z"/><path class="m-front" d="M0,140 L0,125 L100,100 L200,118 L310,90 L420,120 L520,98 L640,124 L760,96 L880,122 L980,102 L1100,124 L1200,125 L1300,100 L1400,118 L1510,90 L1620,120 L1720,98 L1840,124 L1960,96 L2080,122 L2180,102 L2300,124 L2400,125 L2400,140 Z"/></svg>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <a href="../index.html" class="logo" aria-label="Alpine Ascents home">
+                    <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 48 44"><path class="lm-b" d="M19 42 32.5 17 46 42z"/><path class="lm-cap" d="m28.6 24.2 3.9-7.2 3.9 7.2-1.9-1.2-2 1.7-2-1.7z"/><path class="lm-a" fill-rule="evenodd" d="M2 42 18 6l16 36h-7.2l-2.6-6H11.8l-2.6 6zM18 24.5l-4.1 8.5h8.2z"/><path class="lm-snow" d="m13.3 16.6 2.4-1.9 2.3 2.2 2.3-2.2 2.4 1.9"/></svg></span>
+                    <span class="logo-text"><span class="logo-name">ALPINE<br>ASCENTS</span><span class="logo-tag">THE MOUNTAINS ARE CALLING</span></span>
+                </a>
+                <p>Detailed, honest information about mountaineering: its history, styles, techniques, hazards, records and the people who keep the sport alive.</p>
+                <span class="footer-motto">EXPLORE RESPONSIBLY · RESPECT THE MOUNTAINS</span>
+            </div>
+            <div>
+                <h4>Mountaineering</h4>
+                <ul class="footer-links">
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="adventures.html">Types & Styles</a></li>
+                    <li><a href="techniques.html">Techniques</a></li>
+                    <li><a href="records.html" class="is-current">Records</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Safety</h4>
+                <ul class="footer-links">
+                    <li><a href="safety.html">Safety Guidelines</a></li>
+                    <li><a href="hazards.html">Hazards</a></li>
+                    <li><a href="sheltering.html">Sheltering</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Community</h4>
+                <ul class="footer-links">
+                    <li><a href="about%20us.html">About Us</a></li>
+                    <li><a href="clubs.html">Clubs & Camps</a></li>
+                    <li><a href="news.html">Latest News</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="contact%20us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact-col">
+                <h4>Get In Touch</h4>
+                <ul class="footer-contact">
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Karachi, Pakistan</span></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@alpineascents.example">info@alpineascents.example</a></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+923211234567">+92 321 1234567</a></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Mon to Sat, 9:00 am to 6:00 pm</span></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/alpineascents.pk" target="_blank" rel="noopener" aria-label="Instagram @alpineascents.pk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
+                    <a href="https://www.facebook.com/alpineascents.pk" target="_blank" rel="noopener" aria-label="Facebook alpineascents.pk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8.5a.5.5 0 0 1 .5-.5z"/></svg><span>Facebook</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Alpine Ascents. Educational project by Group D.</p>
+            <a href="#top" class="to-top">Back to top &uarr;</a>
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=8"></script>
+    <script src="../js/records.js?v=8"></script>
+
+</body>
+</html>

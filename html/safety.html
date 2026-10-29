@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Guidelines | Alpine Ascents</title>
+    <meta name="description" content="Mountain safety and general guidelines: planning, weather, gear, altitude sickness, teamwork, leave no trace and emergency response.">
+    <meta name="theme-color" content="#1a1f24">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1f24'/%3E%3Cg transform='translate%288 10%29'%3E%3Cpath d='M19 42 32.5 17 46 42z' fill='%232f7f8c'/%3E%3Cpath fill-rule='evenodd' fill='%239fd2da' d='M2 42 18 6l16 36h-7.2l-2.6-6H11.8l-2.6 6zM18 24.5l-4.1 8.5h8.2z'/%3E%3Cpath d='m13.3 16.6 2.4-1.9 2.3 2.2 2.3-2.2 2.4 1.9' fill='none' stroke='%231a1f24' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Instrument+Serif&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css?v=8">
+    <link rel="stylesheet" href="../css/safety.css?v=8">
+</head>
+
+<body id="top" class="page-safety" data-root="../">
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="header">
+        <a href="../index.html" class="logo" aria-label="Alpine Ascents home">
+            <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 48 44"><path class="lm-b" d="M19 42 32.5 17 46 42z"/><path class="lm-cap" d="m28.6 24.2 3.9-7.2 3.9 7.2-1.9-1.2-2 1.7-2-1.7z"/><path class="lm-a" fill-rule="evenodd" d="M2 42 18 6l16 36h-7.2l-2.6-6H11.8l-2.6 6zM18 24.5l-4.1 8.5h8.2z"/><path class="lm-snow" d="m13.3 16.6 2.4-1.9 2.3 2.2 2.3-2.2 2.4 1.9"/></svg></span>
+            <span class="logo-text"><span class="logo-name">ALPINE<br>ASCENTS</span><span class="logo-tag">THE MOUNTAINS ARE CALLING</span></span>
+        </a>
+
+        <nav id="nav" class="site-nav" aria-label="Main">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about%20us.html">About Us</a></li>
+                <li class="nav-item has-dropdown">
+                    <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">Mountaineering <i class="caret" aria-hidden="true"></i></button>
+                    <ul class="dropdown">
+                        <li><a href="history.html"><strong>History</strong><small>From Mont Blanc to the 8,000ers</small></a></li>
+                        <li><a href="adventures.html"><strong>Types & Styles</strong><small>Adventures and climbing styles</small></a></li>
+                        <li><a href="techniques.html"><strong>Techniques</strong><small>Rope, snow, ice and altitude skills</small></a></li>
+                        <li><a href="records.html"><strong>Records</strong><small>Highest peaks and great achievements</small></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown is-current">
+                    <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">Safety <i class="caret" aria-hidden="true"></i></button>
+                    <ul class="dropdown">
+                        <li><a href="safety.html" class="is-current" aria-current="page"><strong>Safety Guidelines</strong><small>General guidelines for every climber</small></a></li>
+                        <li><a href="hazards.html"><strong>Hazards</strong><small>Know the risks before you go</small></a></li>
+                        <li><a href="sheltering.html"><strong>Sheltering</strong><small>Tents, huts, bivouacs and camps</small></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item has-dropdown">
+                    <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">Community <i class="caret" aria-hidden="true"></i></button>
+                    <ul class="dropdown">
+                        <li><a href="clubs.html"><strong>Clubs & Camps</strong><small>Organizations on a world map</small></a></li>
+                        <li><a href="news.html"><strong>Latest News</strong><small>New developments in the field</small></a></li>
+                        <li><a href="feedback.html"><strong>Feedback</strong><small>Tell us how we are doing</small></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-cta"><a class="btn btn-primary btn-small" href="contact%20us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="visitor-box" title="Visitor count">
+            <span class="visitor-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 20 6.5-11 4 6.5L16 12l5 8z"/><path d="m8 11.5 1.5 1.5 1.5-1.5"/></svg></span>
+            <div>
+                <small>VISITORS</small>
+                <strong id="visitorCount">11</strong>
+            </div>
+        </div>
+
+        <button id="menuToggle" class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+    </header>
+
+    <main id="main">
+
+        <section class="page-hero">
+            <div class="page-hero-bg" style="--hero-img: url('https://images.unsplash.com/photo-1624375147958-678d727cc0c4?auto=format&fit=crop&w=1920&q=80')" aria-hidden="true"></div>
+            <div class="page-hero-content">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><span>Safety</span></li>
+                        <li><span aria-current="page">Safety Guidelines</span></li>
+                    </ol>
+                </nav>
+                <p class="eyebrow">ADVENTURE WITH RESPONSIBILITY</p>
+                <h1>REACH THE SUMMIT.<br>RETURN SAFELY<span>.</span></h1>
+                <p class="lead">The summit is only halfway. Good preparation, honest decisions and respect for the mountain bring every climber home.</p>
+                <div class="hero-buttons">
+                    <a href="#pillars" class="btn btn-ghost">Read the Guidelines &#8595;</a>
+                    <a href="#guidelines" class="btn btn-ghost">General Guidelines</a>
+                    <a href="#checklist" class="btn btn-light">Pre-Climb Checklist</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap split">
+                <div class="prose reveal">
+                    <p class="eyebrow">WHY SAFETY COMES FIRST</p>
+                    <h2>Mountains Don't Forgive Mistakes.</h2>
+                    <p>
+                        Weather can change within an hour. Altitude affects every body
+                        differently. A small problem such as a blister, a missed turn or a late start
+                        can become a serious emergency far from help.
+                    </p>
+                    <p>
+                        Safety is not about avoiding adventure. It is a set of habits that
+                        lets you enjoy the mountains again and again.
+                    </p>
+                    <p>
+                        The guidelines on this page apply to everyone, from a weekend trekker to an expedition climber. Read them before every trip, and combine them with the specific advice on our <a class="text-link" href="hazards.html">Hazards</a> and <a class="text-link" href="sheltering.html">Sheltering</a> pages.
+                    </p>
+                </div>
+                <div class="split-media reveal">
+                    <img src="../images/pexels-oskar-gross-1074333632-34341420.jpg" alt="Climbers walking along a summit ridge" loading="lazy">
+                    <span class="media-tag">PLAN THE WHOLE JOURNEY</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="pillars">
+            <div class="section-heading reveal">
+                <p class="eyebrow">THE SIX PILLARS</p>
+                <h2>Build Your Safety Foundation.</h2>
+                <p>Six areas every climber, trekker and camper should understand before leaving home.</p>
+            </div>
+
+            <div class="card-grid wrap pillars">
+                <article class="info-card reveal">
+                    <span class="card-number">01</span>
+                    <div class="card-icon line" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6.5 9 4l6 2.5L21 4v13.5L15 20l-6-2.5L3 20z"/><path d="M9 4v13.5M15 6.5V20"/></svg></div>
+                    <h3>Plan The Route</h3>
+                    <p>Study the route, distance, elevation gain and difficulty. Choose a trip that matches your experience and set a turn-around time before you start.</p>
+                </article>
+
+                <article class="info-card reveal">
+                    <span class="card-number">02</span>
+                    <div class="card-icon line" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17h10a4 4 0 0 0 .6-7.95A5.5 5.5 0 0 0 7 10a3.5 3.5 0 0 0 0 7z"/><path d="m9 20 .8-1.2M13 20l.8-1.2"/></svg></div>
+                    <h3>Check The Weather</h3>
+                    <p>Read the mountain forecast the day before and again on the morning of departure. Wind, snow and storms matter more than temperature alone.</p>
+                </article>
+
+                <article class="info-card reveal">
+                    <span class="card-number">03</span>
+                    <div class="card-icon line" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9a6 6 0 0 1 12 0v10a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z"/><path d="M9.5 3.5h5M9 14h6v4H9z"/></svg></div>
+                    <h3>Carry The Right Gear</h3>
+                    <p>Dress in layers, wear broken-in boots and pack a headlamp, map, first-aid kit, extra food, water and an emergency blanket.</p>
+                </article>
+
+                <article class="info-card reveal">
+                    <span class="card-number">04</span>
+                    <div class="card-icon line" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7v10M18 7v10M3 9.5v5M21 9.5v5M6 12h12"/></svg></div>
+                    <h3>Train And Acclimatize</h3>
+                    <p>Build endurance weeks ahead. On high peaks, ascend gradually and include rest days so your body can adapt to thinner air.</p>
+                </article>
+
+                <article class="info-card reveal">
+                    <span class="card-number">05</span>
+                    <div class="card-icon line" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14a6.5 6.5 0 0 1 3.5 6"/></svg></div>
+                    <h3>Stay With Your Team</h3>
+                    <p>Never climb alone on difficult terrain. Move at the pace of the slowest member and hire a qualified guide when conditions are unfamiliar.</p>
+                </article>
+
+                <article class="info-card reveal">
+                    <span class="card-number">06</span>
+                    <div class="card-icon line" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="12" height="11" rx="2"/><path d="M12 10V6M8.5 5a5 5 0 0 1 7 0M6 3a8.5 8.5 0 0 1 12 0M10 15.5h4"/></svg></div>
+                    <h3>Have An Emergency Plan</h3>
+                    <p>Tell someone your route and return time. Know the local rescue number, carry a charged phone or satellite device and learn basic first aid.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap warning-section">
+                <div class="warning-content reveal">
+                    <p class="eyebrow">KNOW THE WARNING SIGNS</p>
+                    <h2>Altitude Sickness.</h2>
+                    <p>
+                        It can affect anyone above roughly 2,500 metres, whatever their fitness.
+                        Recognising the stages early can save a life.
+                    </p>
+
+                    <div class="stage-list">
+                        <div class="stage stage-mild">
+                            <h3>Mild</h3>
+                            <p>Headache, nausea, dizziness, poor sleep, tiredness.</p>
+                            <strong>Action: stop climbing, rest, drink water.</strong>
+                        </div>
+                        <div class="stage stage-moderate">
+                            <h3>Worsening</h3>
+                            <p>Severe headache, vomiting, loss of balance, shortness of breath at rest.</p>
+                            <strong>Action: descend now. Do not go higher.</strong>
+                        </div>
+                        <div class="stage stage-severe">
+                            <h3>Emergency</h3>
+                            <p>Confusion, cannot walk straight, wet cough, blue lips.</p>
+                            <strong>Action: descend immediately and call rescue.</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warning-image reveal">
+                    <img src="https://images.unsplash.com/photo-1596016691838-70260f1e21c6?auto=format&fit=crop&w=1920&q=80" alt="The Matterhorn beneath a starry sky">
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="guidelines">
+            <div class="section-heading reveal">
+                <p class="eyebrow">GENERAL GUIDELINES</p>
+                <h2>Rules Every Visitor Should Follow.</h2>
+                <p>Beyond personal safety, these guidelines protect the mountains, the people who live there and the climbers who come after you.</p>
+            </div>
+
+            <div class="accordion reveal">
+                <details open>
+                    <summary>Leave No Trace</summary>
+                    <div class="acc-body">
+                        <p>Carry out everything you carry in, including food scraps and used gas canisters. Camp on durable surfaces, use existing toilets or carry human waste bags where required, and never leave fixed ropes or rubbish on the mountain.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Permits And Local Rules</summary>
+                    <div class="acc-body">
+                        <p>Many peaks and national parks need a climbing or trekking permit. In Pakistan, foreign climbers on major Karakoram peaks need a permit from the Gilgit-Baltistan authorities and usually a licensed liaison or guide. Check the current rules before you book flights.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Respect Local Culture</summary>
+                    <div class="acc-body">
+                        <p>Mountain villages are homes, not attractions. Dress modestly, ask before taking photographs of people, respect religious sites such as prayer flags and shrines, and buy food and services locally to support the community.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Hire Qualified Guides And Porters Fairly</summary>
+                    <div class="acc-body">
+                        <p>Use licensed guiding companies. Make sure porters carry a fair load, have proper clothing and insurance, and are paid an honest wage. Their safety is part of your responsibility.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Insurance And Rescue Cover</summary>
+                    <div class="acc-body">
+                        <p>Standard travel insurance often excludes high-altitude climbing. Buy a policy that covers helicopter rescue and medical evacuation at the altitude you plan to reach, and carry the policy number with you.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Wildlife And Water</summary>
+                    <div class="acc-body">
+                        <p>Keep a safe distance from all animals and never feed them. Treat or filter all drinking water, and wash at least 60 metres away from streams and lakes.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <section class="section checklist-section" id="checklist">
+            <div class="section-heading reveal">
+                <p class="eyebrow">BEFORE YOU LEAVE</p>
+                <h2>Pre-Climb Checklist.</h2>
+                <p>Tick each item as you finish it. Your progress shows below and is saved in this browser.</p>
+            </div>
+
+            <div class="checklist-box reveal">
+                <div class="progress-wrap" aria-live="polite">
+                    <div class="progress-bar"><span id="progressFill"></span></div>
+                    <p id="progressText">0 of 10 complete</p>
+                </div>
+
+                <ul class="check-items" id="checkItems">
+                    <li><label><input type="checkbox"> I checked the mountain weather forecast.</label></li>
+                    <li><label><input type="checkbox"> I know my route and my turn-around time.</label></li>
+                    <li><label><input type="checkbox"> I told someone my plan and expected return.</label></li>
+                    <li><label><input type="checkbox"> My boots are broken in and my layers are packed.</label></li>
+                    <li><label><input type="checkbox"> I have a headlamp with spare batteries.</label></li>
+                    <li><label><input type="checkbox"> I carry a first-aid kit and know how to use it.</label></li>
+                    <li><label><input type="checkbox"> I have enough water, food and extra snacks.</label></li>
+                    <li><label><input type="checkbox"> My phone is charged and I saved the rescue number.</label></li>
+                    <li><label><input type="checkbox"> I have a map or offline navigation.</label></li>
+                    <li><label><input type="checkbox"> My team agrees to turn back if conditions worsen.</label></li>
+                </ul>
+
+                <button type="button" id="resetChecklist" class="btn btn-outline">Reset checklist</button>
+            </div>
+        </section>
+
+        <section class="records-section" style="--band-img: url('https://images.unsplash.com/photo-1778003586047-69c68f764af5?auto=format&fit=crop&w=1920&q=80')">
+            <div class="records-overlay reveal">
+                <p class="eyebrow">REMEMBER THESE</p>
+                <h2>Three Rules That Save Lives.</h2>
+
+                <div class="record-grid">
+                    <div>
+                        <strong>Turn back</strong>
+                        <span>The summit is optional. Getting home is not.</span>
+                    </div>
+                    <div>
+                        <strong>Start early</strong>
+                        <span>Finish before afternoon storms and fading light.</span>
+                    </div>
+                    <div>
+                        <strong>Never split up</strong>
+                        <span>A team that stays together can help each other.</span>
+                    </div>
+                </div>
+
+                <a href="hazards.html" class="btn btn-outline">Learn About Mountain Hazards &#8599;</a>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="reveal">
+                <p class="eyebrow">KEEP LEARNING</p>
+                <h2>Prepared Climbers Climb Longer.</h2>
+                <p>Continue with shelter basics or explore the hazards you may face on the mountain.</p>
+
+                <div class="button-row">
+                    <a href="sheltering.html" class="btn btn-primary">Sheltering Guide &#8599;</a>
+                    <a href="hazards.html" class="btn btn-outline">Mountain Hazards &#8599;</a>
+                </div>
+
+                <p class="note">This page is educational. It does not replace training, a qualified guide or local rescue advice.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="ticker" aria-label="Live date, time and location">
+        <div class="ticker-label"><i></i><b>LIVE</b></div>
+        <div class="ticker-window">
+            <div class="ticker-track" aria-live="off"><span>ALPINE ASCENTS</span><span aria-hidden="true">ALPINE ASCENTS</span></div>
+        </div>
+        <button type="button" class="ticker-loc" id="tickerLocate">Share location</button>
+    </div>
+
+    <div class="mountain-divider" aria-hidden="true">
+        <svg viewBox="0 0 2400 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path class="m-back" d="M0,140 L0,95 L90,60 L170,80 L260,35 L350,70 L450,25 L540,66 L640,48 L740,84 L850,30 L950,70 L1050,45 L1130,78 L1200,95 L1290,60 L1370,80 L1460,35 L1550,70 L1650,25 L1740,66 L1840,48 L1940,84 L2050,30 L2150,70 L2250,45 L2330,78 L2400,95 L2400,140 Z"/><path class="m-mid" d="M0,140 L0,110 L120,70 L210,95 L330,55 L430,92 L560,40 L660,88 L780,60 L880,100 L1000,52 L1100,90 L1200,110 L1320,70 L1410,95 L1530,55 L1630,92 L1760,40 L1860,88 L1980,60 L2080,100 L2200,52 L2300,90 L2400,110 L2400,140 Z"/><path class="m-front" d="M0,140 L0,125 L100,100 L200,118 L310,90 L420,120 L520,98 L640,124 L760,96 L880,122 L980,102 L1100,124 L1200,125 L1300,100 L1400,118 L1510,90 L1620,120 L1720,98 L1840,124 L1960,96 L2080,122 L2180,102 L2300,124 L2400,125 L2400,140 Z"/></svg>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <a href="../index.html" class="logo" aria-label="Alpine Ascents home">
+                    <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 48 44"><path class="lm-b" d="M19 42 32.5 17 46 42z"/><path class="lm-cap" d="m28.6 24.2 3.9-7.2 3.9 7.2-1.9-1.2-2 1.7-2-1.7z"/><path class="lm-a" fill-rule="evenodd" d="M2 42 18 6l16 36h-7.2l-2.6-6H11.8l-2.6 6zM18 24.5l-4.1 8.5h8.2z"/><path class="lm-snow" d="m13.3 16.6 2.4-1.9 2.3 2.2 2.3-2.2 2.4 1.9"/></svg></span>
+                    <span class="logo-text"><span class="logo-name">ALPINE<br>ASCENTS</span><span class="logo-tag">THE MOUNTAINS ARE CALLING</span></span>
+                </a>
+                <p>Detailed, honest information about mountaineering: its history, styles, techniques, hazards, records and the people who keep the sport alive.</p>
+                <span class="footer-motto">EXPLORE RESPONSIBLY · RESPECT THE MOUNTAINS</span>
+            </div>
+            <div>
+                <h4>Mountaineering</h4>
+                <ul class="footer-links">
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="adventures.html">Types & Styles</a></li>
+                    <li><a href="techniques.html">Techniques</a></li>
+                    <li><a href="records.html">Records</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Safety</h4>
+                <ul class="footer-links">
+                    <li><a href="safety.html" class="is-current">Safety Guidelines</a></li>
+                    <li><a href="hazards.html">Hazards</a></li>
+                    <li><a href="sheltering.html">Sheltering</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Community</h4>
+                <ul class="footer-links">
+                    <li><a href="about%20us.html">About Us</a></li>
+                    <li><a href="clubs.html">Clubs & Camps</a></li>
+                    <li><a href="news.html">Latest News</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="contact%20us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact-col">
+                <h4>Get In Touch</h4>
+                <ul class="footer-contact">
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Karachi, Pakistan</span></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@alpineascents.example">info@alpineascents.example</a></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+923211234567">+92 321 1234567</a></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Mon to Sat, 9:00 am to 6:00 pm</span></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/alpineascents.pk" target="_blank" rel="noopener" aria-label="Instagram @alpineascents.pk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
+                    <a href="https://www.facebook.com/alpineascents.pk" target="_blank" rel="noopener" aria-label="Facebook alpineascents.pk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8.5a.5.5 0 0 1 .5-.5z"/></svg><span>Facebook</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Alpine Ascents. Educational project by Group D.</p>
+            <a href="#top" class="to-top">Back to top &uarr;</a>
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=8"></script>
+    <script src="../js/safety.js?v=8"></script>
+
+</body>
+</html>

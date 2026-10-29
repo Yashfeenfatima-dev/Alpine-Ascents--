@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine Ascents | Mountain Adventures</title>
+    <meta name="description" content="Explore mountaineering: history, types and styles, techniques, sheltering, hazards, records, clubs and the latest developments.">
+    <meta name="theme-color" content="#1a1f24">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1f24'/%3E%3Cg transform='translate%288 10%29'%3E%3Cpath d='M19 42 32.5 17 46 42z' fill='%232f7f8c'/%3E%3Cpath fill-rule='evenodd' fill='%239fd2da' d='M2 42 18 6l16 36h-7.2l-2.6-6H11.8l-2.6 6zM18 24.5l-4.1 8.5h8.2z'/%3E%3Cpath d='m13.3 16.6 2.4-1.9 2.3 2.2 2.3-2.2 2.4 1.9' fill='none' stroke='%231a1f24' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Instrument+Serif&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=8">
+    <link rel="stylesheet" href="css/home.css?v=8">
+</head>
+
+<body id="top" class="page-home" data-root="">
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="header">
+        <a href="index.html" class="logo" aria-label="Alpine Ascents home">
+            <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 48 44"><path class="lm-b" d="M19 42 32.5 17 46 42z"/><path class="lm-cap" d="m28.6 24.2 3.9-7.2 3.9 7.2-1.9-1.2-2 1.7-2-1.7z"/><path class="lm-a" fill-rule="evenodd" d="M2 42 18 6l16 36h-7.2l-2.6-6H11.8l-2.6 6zM18 24.5l-4.1 8.5h8.2z"/><path class="lm-snow" d="m13.3 16.6 2.4-1.9 2.3 2.2 2.3-2.2 2.4 1.9"/></svg></span>
+            <span class="logo-text"><span class="logo-name">ALPINE<br>ASCENTS</span><span class="logo-tag">THE MOUNTAINS ARE CALLING</span></span>
+        </a>
+
+        <nav id="nav" class="site-nav" aria-label="Main">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link is-current" href="index.html" aria-current="page">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="html/about%20us.html">About Us</a></li>
+                <li class="nav-item has-dropdown">
+                    <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">Mountaineering <i class="caret" aria-hidden="true"></i></button>
+                    <ul class="dropdown">
+                        <li><a href="html/history.html"><strong>History</strong><small>From Mont Blanc to the 8,000ers</small></a></li>
+                        <li><a href="html/adventures.html"><strong>Types & Styles</strong><small>Adventures and climbing styles</small></a></li>
+                        <li><a href="html/techniques.html"><strong>Techniques</strong><small>Rope, snow, ice and altitude skills</small></a></li>
+                        <li><a href="html/records.html"><strong>Records</strong><small>Highest peaks and great achievements</small></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">Safety <i class="caret" aria-hidden="true"></i></button>
+                    <ul class="dropdown">
+                        <li><a href="html/safety.html"><strong>Safety Guidelines</strong><small>General guidelines for every climber</small></a></li>
+                        <li><a href="html/hazards.html"><strong>Hazards</strong><small>Know the risks before you go</small></a></li>
+                        <li><a href="html/sheltering.html"><strong>Sheltering</strong><small>Tents, huts, bivouacs and camps</small></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="html/gallery.html">Gallery</a></li>
+                <li class="nav-item has-dropdown">
+                    <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">Community <i class="caret" aria-hidden="true"></i></button>
+                    <ul class="dropdown">
+                        <li><a href="html/clubs.html"><strong>Clubs & Camps</strong><small>Organizations on a world map</small></a></li>
+                        <li><a href="html/news.html"><strong>Latest News</strong><small>New developments in the field</small></a></li>
+                        <li><a href="html/feedback.html"><strong>Feedback</strong><small>Tell us how we are doing</small></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-cta"><a class="btn btn-primary btn-small" href="html/contact%20us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="visitor-box" title="Visitor count">
+            <span class="visitor-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 20 6.5-11 4 6.5L16 12l5 8z"/><path d="m8 11.5 1.5 1.5 1.5-1.5"/></svg></span>
+            <div>
+                <small>VISITORS</small>
+                <strong id="visitorCount">11</strong>
+            </div>
+        </div>
+
+        <button id="menuToggle" class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+    </header>
+
+    <main id="main">
+
+        <section class="hero" aria-label="Featured mountain videos">
+            <div class="hero-slides" id="heroSlides">
+                <video class="hero-slide active" muted loop playsinline preload="auto" poster="https://images.unsplash.com/photo-1778003586047-69c68f764af5?auto=format&fit=crop&w=1920&q=80" data-src="videos/14942937_3840_2160_60fps.mp4" data-title="Into the Mist" aria-hidden="true"></video>
+                <video class="hero-slide" muted loop playsinline preload="none" poster="https://images.unsplash.com/photo-1486911278844-a81c5267e227?auto=format&fit=crop&w=1920&q=80" data-src="videos/12426698-uhd_3840_2160_30fps.mp4" data-title="Sea of Clouds" aria-hidden="true"></video>
+                <video class="hero-slide" muted loop playsinline preload="none" poster="https://images.unsplash.com/photo-1596016691838-70260f1e21c6?auto=format&fit=crop&w=1920&q=80" data-src="videos/15150501_3840_2160_25fps.mp4" data-title="The Lone Summit" aria-hidden="true"></video>
+                <video class="hero-slide" muted loop playsinline preload="none" poster="https://images.unsplash.com/photo-1637580980556-085dee659c7e?auto=format&fit=crop&w=1920&q=80" data-src="videos/13660273_3840_2160_25fps.mp4" data-title="Storm Over the Peaks" aria-hidden="true"></video>
+                <video class="hero-slide" muted loop playsinline preload="none" poster="https://images.unsplash.com/photo-1538279288577-f2551fb138ba?auto=format&fit=crop&w=1920&q=80" data-src="videos/12438510_3840_2160_24fps.mp4" data-title="Glacier at Dusk" aria-hidden="true"></video>
+            </div>
+
+            <div class="hero-content">
+                <p class="eyebrow">EXPLORE BEYOND THE ORDINARY</p>
+                <h1>THE MOUNTAINS<br>ARE CALLING<span>.</span></h1>
+                <p class="hero-text">
+                    Discover breathtaking peaks, explore the beauty of nature,
+                    and learn about the extraordinary world of mountaineering.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="html/adventures.html" class="btn btn-ghost">Explore Adventures &#8599;</a>
+                    <a href="#about" class="btn btn-ghost">Discover Our World</a>
+                    <a href="html/contact%20us.html" class="btn btn-light">Contact Us &#8599;</a>
+                </div>
+            </div>
+
+            <div class="hero-bottom">
+                <span><b id="heroCount">01 / 05</b> &mdash; <span id="heroTitle">Into the Mist</span></span>
+                <button type="button" class="hero-pause" id="heroPause" aria-pressed="false">Pause</button>
+            </div>
+
+            <div class="hero-side-text">ADVENTURE &middot; NATURE &middot; DISCOVERY</div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="intro-grid">
+                <div class="about-image reveal">
+                    <img src="https://images.unsplash.com/photo-1600588545434-1bcc100f7d58?auto=format&fit=crop&w=1920&q=80" alt="Mont Blanc massif in soft evening light">
+                    <span class="image-label">THE BEAUTY OF THE WILD</span>
+                </div>
+
+                <div class="about-text prose reveal">
+                    <p class="eyebrow">WELCOME TO ALPINE ASCENTS</p>
+                    <h2>Every Mountain Has<br>A Story To Tell.</h2>
+                    <p>
+                        Mountaineering is more than climbing a mountain.
+                        It is a journey of preparation, courage, teamwork
+                        and respect for nature.
+                    </p>
+                    <div class="definition">
+                        <p>Mountaineering, also called mountain climbing, is the sport of attaining, or attempting to attain, high points in mountainous regions, mainly for the pleasure of the climb.</p>
+                    </div>
+                    <p>
+                        The word is often used loosely for walking up low hills, but it more properly describes climbing where the terrain and weather are hazardous enough that previous experience is needed for safety. For the untrained, mountaineering can be a dangerous pastime.
+                    </p>
+                    <p>
+                        Unlike most sports, mountaineering has no single rule book or governing body. Climbers follow a wide variety of techniques and philosophies, and this website brings them together: the history of mountain climbing, essential equipment, climbing techniques, mountain shelters and important safety measures.
+                    </p>
+                    <a href="html/about%20us.html" class="text-link">Learn More About Us &#8599;</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="adventures">
+            <div class="section-heading reveal">
+                <p class="eyebrow">FIND YOUR NEXT CHALLENGE</p>
+                <h2>Into The Wild.</h2>
+                <p>Explore the many sides of mountain adventure, from a first day hike to a high-altitude expedition.</p>
+            </div>
+
+            <div class="adventure-grid">
+                <article class="adventure-card reveal">
+                    <img src="https://images.unsplash.com/photo-1539667547529-84c607280d20?auto=format&fit=crop&w=1920&q=80" alt="Moraine Lake in the Canadian Rockies">
+                    <div class="card-content">
+                        <span>01 / HIGH ALTITUDE</span>
+                        <h3>Mountain Climbing</h3>
+                        <p>Discover mountain routes, climbing equipment and the preparation needed for expeditions above the snow line.</p>
+                        <a href="html/adventures.html">Explore More &#8599;</a>
+                    </div>
+                </article>
+
+                <article class="adventure-card reveal">
+                    <img src="https://images.unsplash.com/photo-1517079810336-d39e72287591?auto=format&fit=crop&w=1920&q=80" alt="Seealpsee lake in the Swiss Alps">
+                    <div class="card-content">
+                        <span>02 / OUTDOOR LIVING</span>
+                        <h3>Mountain Camping</h3>
+                        <p>Learn about mountain shelters, campsite preparation and responsible outdoor living in wild places.</p>
+                        <a href="html/sheltering.html">Explore More &#8599;</a>
+                    </div>
+                </article>
+
+                <article class="adventure-card reveal">
+                    <img src="https://images.unsplash.com/photo-1502126324834-38f8e02d7160?auto=format&fit=crop&w=1920&q=80" alt="Climber scrambling towards a summit">
+                    <div class="card-content">
+                        <span>03 / THE JOURNEY</span>
+                        <h3>Mountain Trekking</h3>
+                        <p>Explore beautiful mountain trails, navigation basics and the physical preparation every trekker needs.</p>
+                        <a href="html/adventures.html">Explore More &#8599;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section history-section">
+            <div class="history-image reveal">
+                <img src="https://images.unsplash.com/photo-1596016691838-70260f1e21c6?auto=format&fit=crop&w=1920&q=80" alt="The Matterhorn beneath a starry sky">
+            </div>
+
+            <div class="history-content reveal">
+                <p class="eyebrow">A LEGACY OF EXPLORATION</p>
+                <h2>The History<br>Of Mountaineering.</h2>
+                <p>
+                    For centuries, mountains have inspired explorers and adventurers.
+                    Over time, mountaineering developed into an activity that combines
+                    skill, endurance, planning and technical knowledge.
+                </p>
+                <p>
+                    Modern climbing is usually dated to 1786, when Mont Blanc was first climbed. The sport then moved from the Alps to the greater ranges of the Himalaya and Karakoram, where every one of the fourteen 8,000-metre peaks had been climbed by 1964.
+                </p>
+                <div class="mini-timeline">
+                    <div><b>1786</b><span>Mont Blanc, the birth of the sport</span></div>
+                    <div><b>1953</b><span>Everest and Nanga Parbat climbed</span></div>
+                    <div><b>2021</b><span>First winter ascent of K2</span></div>
+                </div>
+                <a href="html/history.html" class="btn btn-primary">Discover Our History &#8599;</a>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="section-heading reveal">
+                <p class="eyebrow">KNOWLEDGE FOR EVERY CLIMBER</p>
+                <h2>Learn The Essentials.</h2>
+                <p>Understanding the mountains is the first step towards exploring them responsibly. Start with any topic below.</p>
+            </div>
+
+            <div class="card-grid cols-3 wrap">
+                <article class="info-card reveal">
+                    <span class="card-number">01</span>
+                    <div class="card-icon line" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m2 20 7-12 4 6.5L15.5 11 22 20z"/><circle cx="17.5" cy="5.5" r="2"/></svg></div>
+                    <h3>Types &amp; Styles</h3>
+                    <p>Trekking, rock, ice, alpine style and expedition style: see how each kind of mountaineering works.</p>
+                    <a class="card-link" href="html/adventures.html">Read More &#8599;</a>
+                </article>
+
+                <article class="info-card reveal">
+                    <span class="card-number">02</span>
+                    <div class="card-icon line" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="5"/><path d="M13.5 7v7"/><path d="M10.5 9v8"/></svg></div>
+                    <h3>Climbing Techniques</h3>
+                    <p>Learn about rope work, belaying, crampon and ice axe skills, glacier travel and acclimatization.</p>
+                    <a class="card-link" href="html/techniques.html">Read More &#8599;</a>
+                </article>
+
+                <article class="info-card reveal">
+                    <span class="card-number">03</span>
+                    <div class="card-icon line" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20 12 5l8 15"/><path d="M9.5 20 12 14l2.5 6"/><path d="M12 5 10.5 2.5M12 5l1.5-2.5"/></svg></div>
+                    <h3>Sheltering</h3>
+                    <p>Explore mountain tents, huts, bivouacs, campsite selection, insulation and outdoor shelter preparation.</p>
+                    <a class="card-link" href="html/sheltering.html">Read More &#8599;</a>
+                </article>
+
+                <article class="info-card reveal">
+                    <span class="card-number">04</span>
+                    <div class="card-icon line" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20h20z"/><path d="M12 10v4"/><path d="M12 17h.01"/></svg></div>
+                    <h3>Mountain Hazards</h3>
+                    <p>Understand bad weather, avalanches, falling rocks, extreme cold and altitude-related risks.</p>
+                    <a class="card-link" href="html/hazards.html">Read More &#8599;</a>
+                </article>
+
+                <article class="info-card reveal">
+                    <span class="card-number">05</span>
+                    <div class="card-icon line" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+                    <h3>Safety Guidelines</h3>
+                    <p>Discover the importance of training, weather checks, suitable equipment and emergency planning.</p>
+                    <a class="card-link" href="html/safety.html">Read More &#8599;</a>
+                </article>
+
+                <article class="info-card reveal">
+                    <span class="card-number">06</span>
+                    <div class="card-icon line" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4"/><path d="M12 13v4M8 21h8M9.5 17h5v4h-5z"/></svg></div>
+                    <h3>Records</h3>
+                    <p>The fourteen 8,000-metre peaks, the Seven Summits and the climbers who set the great milestones.</p>
+                    <a class="card-link" href="html/records.html">Read More &#8599;</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="records-section">
+            <div class="records-overlay reveal">
+                <p class="eyebrow">THE WORLD ABOVE THE CLOUDS</p>
+                <h2>Earth's Greatest Peaks.</h2>
+                <p>Discover remarkable mountains, historic expeditions and achievements that have shaped climbing history.</p>
+
+                <div class="record-grid">
+                    <div>
+                        <strong>8,849 m</strong>
+                        <span>Mount Everest &middot; Approximate height</span>
+                    </div>
+                    <div>
+                        <strong>1953</strong>
+                        <span>First confirmed ascent of Everest</span>
+                    </div>
+                    <div>
+                        <strong>14</strong>
+                        <span>Mountains above 8,000 metres</span>
+                    </div>
+                    <div>
+                        <strong>5 of 14</strong>
+                        <span>8,000ers stand in Pakistan</span>
+                    </div>
+                </div>
+
+                <a href="html/records.html" class="btn btn-outline">Explore Mountain Records &#8599;</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="safety-section">
+                <div class="safety-content reveal">
+                    <p class="eyebrow">ADVENTURE WITH RESPONSIBILITY</p>
+                    <h2>Reach The Summit.<br>Return Safely.</h2>
+
+                    <p>
+                        A successful mountain adventure begins with careful planning,
+                        suitable training and respect for changing mountain conditions.
+                        Most accidents happen on the way down, when climbers are tired, so the plan must cover the whole journey.
+                    </p>
+
+                    <ul class="check-list">
+                        <li>Check weather forecasts before departure.</li>
+                        <li>Choose suitable routes and train properly.</li>
+                        <li>Carry appropriate gear and emergency supplies.</li>
+                        <li>Climb with experienced guides when needed.</li>
+                        <li>Respect nature and follow local safety advice.</li>
+                    </ul>
+
+                    <a href="html/safety.html" class="text-link">Explore Safety Guidelines &#8599;</a>
+                </div>
+
+                <div class="safety-image reveal">
+                    <img src="https://images.unsplash.com/photo-1624375147958-678d727cc0c4?auto=format&fit=crop&w=1920&q=80" alt="Alpenglow on the Grand Teton range">
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="section-heading reveal">
+                <p class="eyebrow">MOMENTS IN THE MOUNTAINS</p>
+                <h2>The Adventure Gallery.</h2>
+                <p>Discover the landscapes that make every journey unforgettable: 68 photos and 12 videos.</p>
+            </div>
+
+            <div class="gallery-grid reveal">
+                <a href="html/gallery.html#photos">
+                    <img src="https://images.unsplash.com/photo-1599551528722-6b6d968512a2?auto=format&fit=crop&w=1920&q=80" alt="Mount Rainier at dusk" loading="lazy">
+                    <span>Mount Rainier, USA</span>
+                </a>
+                <a href="html/gallery.html#photos">
+                    <img src="https://images.unsplash.com/photo-1780314332097-fa770b33ed7f?auto=format&fit=crop&w=1920&q=80" alt="Lauterbrunnen waterfall in Switzerland" loading="lazy">
+                    <span>Lauterbrunnen, Switzerland</span>
+                </a>
+                <a href="html/gallery.html#photos">
+                    <img src="https://images.unsplash.com/photo-1787946177979-a7e6b53ac16f?auto=format&fit=crop&w=1920&q=80" alt="Skogafoss waterfall in Iceland" loading="lazy">
+                    <span>Sk&oacute;gafoss, Iceland</span>
+                </a>
+                <a href="html/gallery.html#photos">
+                    <img src="https://images.unsplash.com/photo-1556952428-b52ca0615754?auto=format&fit=crop&w=1920&q=80" alt="Eibsee lake below the Zugspitze" loading="lazy">
+                    <span>Eibsee, Germany</span>
+                </a>
+            </div>
+
+            <div class="gallery-button">
+                <a href="html/gallery.html" class="btn btn-primary">View Full Gallery &#8599;</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading reveal">
+                <p class="eyebrow">WHAT IS NEW</p>
+                <h2>Latest Developments.</h2>
+                <p>Mountaineering keeps changing. New rules, new technology and a changing climate shape every season.</p>
+            </div>
+
+            <div class="card-grid wrap">
+                <article class="info-card reveal">
+                    <span class="tag">Rules &amp; Permits</span>
+                    <h3>Higher Everest Permit Fees</h3>
+                    <p>Nepal raised the spring-season Everest permit fee for foreign climbers from US$11,000 to US$15,000, starting in September 2025.</p>
+                    <a class="card-link" href="html/news.html">Read More &#8599;</a>
+                </article>
+                <article class="info-card reveal">
+                    <span class="tag">Technology</span>
+                    <h3>Drones On The Mountain</h3>
+                    <p>Heavy-lift drones are now being trialled to carry ropes, ladders and oxygen across the Khumbu Icefall and to bring rubbish down.</p>
+                    <a class="card-link" href="html/news.html">Read More &#8599;</a>
+                </article>
+                <article class="info-card reveal">
+                    <span class="tag">Environment</span>
+                    <h3>Melting Glaciers</h3>
+                    <p>Scientists warn that Hindu Kush Himalaya glaciers could lose up to 80% of their volume by 2100 if emissions stay high.</p>
+                    <a class="card-link" href="html/news.html">Read More &#8599;</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="reveal">
+                <p class="eyebrow">FIND YOUR CLIMBING COMMUNITY</p>
+                <h2>Explore Mountain Organizations.</h2>
+                <p>Discover climbing clubs, training organizations and mountaineering resources around the world on our interactive map, and read success stories from organized camps.</p>
+
+                <div class="button-row">
+                    <a href="html/clubs.html" class="btn btn-primary">Open The Clubs Map &#8599;</a>
+                    <a href="html/clubs.html#stories" class="btn btn-outline">Read Success Stories</a>
+                </div>
+
+                <p class="note">Allow location access in your browser if you want to use location-based features.</p>
+            </div>
+        </section>
+
+        <section class="records-section home-contact" style="--band-img: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1920&q=80')">
+            <div class="records-overlay reveal">
+                <p class="eyebrow">PLAN YOUR NEXT ASCENT</p>
+                <h2>Have A Question? Let's Talk.</h2>
+                <p>Planning a trek, joining a camp or booking a shelter? Tell us who is climbing and where you want to go. Our team replies within 24 hours.</p>
+                <div class="record-grid">
+                    <div><strong>24 hrs</strong><span>Average reply time</span></div>
+                    <div><strong>Mon &ndash; Sat</strong><span>9:00 am to 6:00 pm</span></div>
+                    <div><strong>Karachi</strong><span>Pakistan</span></div>
+                </div>
+                <div class="button-row">
+                    <a href="html/contact%20us.html" class="btn btn-light">Contact Us &#8599;</a>
+                    <a href="html/sheltering.html#shelters" class="btn btn-outline">Book A Shelter</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="ticker" aria-label="Live date, time and location">
+        <div class="ticker-label"><i></i><b>LIVE</b></div>
+        <div class="ticker-window">
+            <div class="ticker-track" aria-live="off"><span>ALPINE ASCENTS</span><span aria-hidden="true">ALPINE ASCENTS</span></div>
+        </div>
+        <button type="button" class="ticker-loc" id="tickerLocate">Share location</button>
+    </div>
+
+    <div class="mountain-divider" aria-hidden="true">
+        <svg viewBox="0 0 2400 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path class="m-back" d="M0,140 L0,95 L90,60 L170,80 L260,35 L350,70 L450,25 L540,66 L640,48 L740,84 L850,30 L950,70 L1050,45 L1130,78 L1200,95 L1290,60 L1370,80 L1460,35 L1550,70 L1650,25 L1740,66 L1840,48 L1940,84 L2050,30 L2150,70 L2250,45 L2330,78 L2400,95 L2400,140 Z"/><path class="m-mid" d="M0,140 L0,110 L120,70 L210,95 L330,55 L430,92 L560,40 L660,88 L780,60 L880,100 L1000,52 L1100,90 L1200,110 L1320,70 L1410,95 L1530,55 L1630,92 L1760,40 L1860,88 L1980,60 L2080,100 L2200,52 L2300,90 L2400,110 L2400,140 Z"/><path class="m-front" d="M0,140 L0,125 L100,100 L200,118 L310,90 L420,120 L520,98 L640,124 L760,96 L880,122 L980,102 L1100,124 L1200,125 L1300,100 L1400,118 L1510,90 L1620,120 L1720,98 L1840,124 L1960,96 L2080,122 L2180,102 L2300,124 L2400,125 L2400,140 Z"/></svg>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <a href="index.html" class="logo" aria-label="Alpine Ascents home">
+                    <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 48 44"><path class="lm-b" d="M19 42 32.5 17 46 42z"/><path class="lm-cap" d="m28.6 24.2 3.9-7.2 3.9 7.2-1.9-1.2-2 1.7-2-1.7z"/><path class="lm-a" fill-rule="evenodd" d="M2 42 18 6l16 36h-7.2l-2.6-6H11.8l-2.6 6zM18 24.5l-4.1 8.5h8.2z"/><path class="lm-snow" d="m13.3 16.6 2.4-1.9 2.3 2.2 2.3-2.2 2.4 1.9"/></svg></span>
+                    <span class="logo-text"><span class="logo-name">ALPINE<br>ASCENTS</span><span class="logo-tag">THE MOUNTAINS ARE CALLING</span></span>
+                </a>
+                <p>Detailed, honest information about mountaineering: its history, styles, techniques, hazards, records and the people who keep the sport alive.</p>
+                <span class="footer-motto">EXPLORE RESPONSIBLY · RESPECT THE MOUNTAINS</span>
+            </div>
+            <div>
+                <h4>Mountaineering</h4>
+                <ul class="footer-links">
+                    <li><a href="html/history.html">History</a></li>
+                    <li><a href="html/adventures.html">Types & Styles</a></li>
+                    <li><a href="html/techniques.html">Techniques</a></li>
+                    <li><a href="html/records.html">Records</a></li>
+                    <li><a href="html/gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Safety</h4>
+                <ul class="footer-links">
+                    <li><a href="html/safety.html">Safety Guidelines</a></li>
+                    <li><a href="html/hazards.html">Hazards</a></li>
+                    <li><a href="html/sheltering.html">Sheltering</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Community</h4>
+                <ul class="footer-links">
+                    <li><a href="html/about%20us.html">About Us</a></li>
+                    <li><a href="html/clubs.html">Clubs & Camps</a></li>
+                    <li><a href="html/news.html">Latest News</a></li>
+                    <li><a href="html/feedback.html">Feedback</a></li>
+                    <li><a href="html/contact%20us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact-col">
+                <h4>Get In Touch</h4>
+                <ul class="footer-contact">
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Karachi, Pakistan</span></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@alpineascents.example">info@alpineascents.example</a></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+923211234567">+92 321 1234567</a></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Mon to Sat, 9:00 am to 6:00 pm</span></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/alpineascents.pk" target="_blank" rel="noopener" aria-label="Instagram @alpineascents.pk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
+                    <a href="https://www.facebook.com/alpineascents.pk" target="_blank" rel="noopener" aria-label="Facebook alpineascents.pk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8.5a.5.5 0 0 1 .5-.5z"/></svg><span>Facebook</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Alpine Ascents. Educational project by Group D.</p>
+            <a href="#top" class="to-top">Back to top &uarr;</a>
+        </div>
+    </footer>
+
+    <script src="js/main.js?v=8"></script>
+    <script src="js/home.js?v=8"></script>
+
+</body>
+</html>

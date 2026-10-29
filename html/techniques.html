@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountaineering Techniques | Alpine Ascents</title>
+    <meta name="description" content="Essential mountaineering techniques: knots, belaying, rappelling, crampons, self-arrest, glacier travel, acclimatization and navigation.">
+    <meta name="theme-color" content="#1a1f24">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1f24'/%3E%3Cg transform='translate%288 10%29'%3E%3Cpath d='M19 42 32.5 17 46 42z' fill='%232f7f8c'/%3E%3Cpath fill-rule='evenodd' fill='%239fd2da' d='M2 42 18 6l16 36h-7.2l-2.6-6H11.8l-2.6 6zM18 24.5l-4.1 8.5h8.2z'/%3E%3Cpath d='m13.3 16.6 2.4-1.9 2.3 2.2 2.3-2.2 2.4 1.9' fill='none' stroke='%231a1f24' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Instrument+Serif&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css?v=8">
+    <link rel="stylesheet" href="../css/techniques.css?v=8">
+</head>
+
+<body id="top" class="page-techniques" data-root="../">
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="header">
+        <a href="../index.html" class="logo" aria-label="Alpine Ascents home">
+            <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 48 44"><path class="lm-b" d="M19 42 32.5 17 46 42z"/><path class="lm-cap" d="m28.6 24.2 3.9-7.2 3.9 7.2-1.9-1.2-2 1.7-2-1.7z"/><path class="lm-a" fill-rule="evenodd" d="M2 42 18 6l16 36h-7.2l-2.6-6H11.8l-2.6 6zM18 24.5l-4.1 8.5h8.2z"/><path class="lm-snow" d="m13.3 16.6 2.4-1.9 2.3 2.2 2.3-2.2 2.4 1.9"/></svg></span>
+            <span class="logo-text"><span class="logo-name">ALPINE<br>ASCENTS</span><span class="logo-tag">THE MOUNTAINS ARE CALLING</span></span>
+        </a>
+
+        <nav id="nav" class="site-nav" aria-label="Main">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about%20us.html">About Us</a></li>
+                <li class="nav-item has-dropdown is-current">
+                    <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">Mountaineering <i class="caret" aria-hidden="true"></i></button>
+                    <ul class="dropdown">
+                        <li><a href="history.html"><strong>History</strong><small>From Mont Blanc to the 8,000ers</small></a></li>
+                        <li><a href="adventures.html"><strong>Types & Styles</strong><small>Adventures and climbing styles</small></a></li>
+                        <li><a href="techniques.html" class="is-current" aria-current="page"><strong>Techniques</strong><small>Rope, snow, ice and altitude skills</small></a></li>
+                        <li><a href="records.html"><strong>Records</strong><small>Highest peaks and great achievements</small></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">Safety <i class="caret" aria-hidden="true"></i></button>
+                    <ul class="dropdown">
+                        <li><a href="safety.html"><strong>Safety Guidelines</strong><small>General guidelines for every climber</small></a></li>
+                        <li><a href="hazards.html"><strong>Hazards</strong><small>Know the risks before you go</small></a></li>
+                        <li><a href="sheltering.html"><strong>Sheltering</strong><small>Tents, huts, bivouacs and camps</small></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item has-dropdown">
+                    <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">Community <i class="caret" aria-hidden="true"></i></button>
+                    <ul class="dropdown">
+                        <li><a href="clubs.html"><strong>Clubs & Camps</strong><small>Organizations on a world map</small></a></li>
+                        <li><a href="news.html"><strong>Latest News</strong><small>New developments in the field</small></a></li>
+                        <li><a href="feedback.html"><strong>Feedback</strong><small>Tell us how we are doing</small></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-cta"><a class="btn btn-primary btn-small" href="contact%20us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="visitor-box" title="Visitor count">
+            <span class="visitor-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 20 6.5-11 4 6.5L16 12l5 8z"/><path d="m8 11.5 1.5 1.5 1.5-1.5"/></svg></span>
+            <div>
+                <small>VISITORS</small>
+                <strong id="visitorCount">11</strong>
+            </div>
+        </div>
+
+        <button id="menuToggle" class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+    </header>
+
+    <main id="main">
+
+        <section class="page-hero">
+            <div class="page-hero-bg" style="--hero-img: url('https://images.unsplash.com/photo-1597250861267-429663f244a8?auto=format&fit=crop&w=1920&q=80')" aria-hidden="true"></div>
+            <div class="page-hero-content">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><span>Mountaineering</span></li>
+                        <li><span aria-current="page">Techniques</span></li>
+                    </ol>
+                </nav>
+                <p class="eyebrow">SKILLS FOR EVERY TERRAIN</p>
+                <h1>CLIMBING<br>TECHNIQUES<span>.</span></h1>
+                <p class="lead">Rope work, snow and ice skills, glacier travel and acclimatization: the techniques that bring climbers home safely.</p>
+                <div class="hero-buttons">
+                    <a href="#skills" class="btn btn-ghost">See The Skills &#8595;</a>
+                    <a href="#calls" class="btn btn-light">Climbing Calls</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap split">
+                <div class="prose reveal">
+                    <p class="eyebrow">SKILL BEFORE SUMMIT</p>
+                    <h2>Technique Is What Keeps Climbers Alive.</h2>
+                    <p>Strength and fitness help, but technique is what lets a climber move efficiently, protect a fall and make good decisions when conditions change. Most mountaineering accidents involve a basic skill that was forgotten, rushed or never learned.</p>
+                    <p>The techniques on this page are grouped by terrain: <strong>rock and rope work</strong>, <strong>snow and ice</strong>, <strong>glacier travel</strong>, <strong>high altitude</strong> and <strong>navigation</strong>. Each one should be learned with a qualified instructor and practised on easy ground before it is used on a real mountain.</p>
+                    <div class="callout"><p><strong>Remember:</strong> reading about a technique is a starting point, not training. Practise every skill until you can do it while cold, tired and wearing gloves.</p></div>
+                </div>
+                <div class="split-media reveal">
+                    <img src="https://images.unsplash.com/photo-1597250861267-429663f244a8?auto=format&fit=crop&w=1920&q=80" alt="Climbers on a high mountain ridge trail">
+                    <span class="media-tag">PRACTICE MAKES SAFE</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="skills">
+            <div class="section-heading reveal">
+                <p class="eyebrow">CORE TECHNIQUES</p>
+                <h2>Twelve Skills Every Mountaineer Learns.</h2>
+                <p>Choose a terrain to filter the list.</p>
+            </div>
+
+            <div class="filter-bar" role="group" aria-label="Filter techniques">
+                <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All <em>12</em></button>
+                <button type="button" class="filter-btn" data-filter="rock" aria-pressed="false">Rock &amp; Rope <em>4</em></button>
+                <button type="button" class="filter-btn" data-filter="snow" aria-pressed="false">Snow &amp; Ice <em>3</em></button>
+                <button type="button" class="filter-btn" data-filter="glacier" aria-pressed="false">Glacier <em>2</em></button>
+                <button type="button" class="filter-btn" data-filter="altitude" aria-pressed="false">High Altitude <em>2</em></button>
+                <button type="button" class="filter-btn" data-filter="nav" aria-pressed="false">Navigation <em>1</em></button>
+            </div>
+
+            <div class="card-grid wrap" id="techGrid">
+                <article class="info-card tech-card reveal" data-cat="rock">
+                    <span class="tag">Rock &amp; Rope</span>
+                    <h3>Footwork &amp; Balance</h3>
+                    <p>Good climbers climb with their legs, not their arms. Keep your weight over your feet and move one limb at a time.</p>
+                    <ul><li>Keep three points of contact on hard ground</li><li>Use the edge of the shoe on small holds</li><li>Keep arms straight to save strength</li></ul>
+                </article>
+                <article class="info-card tech-card reveal" data-cat="rock">
+                    <span class="tag">Rock &amp; Rope</span>
+                    <h3>Knots</h3>
+                    <p>A handful of knots, tied perfectly every time, cover almost every situation on the mountain.</p>
+                    <ul><li>Figure-eight follow-through to tie in</li><li>Clove hitch for anchors</li><li>Prusik for ascending and backups</li></ul>
+                </article>
+                <article class="info-card tech-card reveal" data-cat="rock">
+                    <span class="tag">Rock &amp; Rope</span>
+                    <h3>Belaying</h3>
+                    <p>The belayer manages the rope so a falling climber is held. A belay device creates friction and locks the rope when it is pulled.</p>
+                    <ul><li>Never let go of the brake hand</li><li>Check knot, harness and device before every climb</li><li>Use clear calls such as "On belay?" and "Climb on"</li></ul>
+                </article>
+                <article class="info-card tech-card reveal" data-cat="rock">
+                    <span class="tag">Rock &amp; Rope</span>
+                    <h3>Rappelling (Abseiling)</h3>
+                    <p>Climbers slide down a fixed rope with a friction device. It is a common way down steep ground and one of the riskiest moments of a climb.</p>
+                    <ul><li>Tie stopper knots in both rope ends</li><li>Use a friction-hitch backup below the device</li><li>Check the anchor before you commit your weight</li></ul>
+                </article>
+                <article class="info-card tech-card reveal" data-cat="snow">
+                    <span class="tag">Snow &amp; Ice</span>
+                    <h3>Crampon Technique</h3>
+                    <p>Crampons are metal spikes fixed to boots. On gentle slopes climbers place all points flat (French technique). On steep ice they kick in the front points (German or front-pointing technique).</p>
+                    <ul><li>Walk with feet slightly apart to avoid snagging trousers</li><li>Keep the whole sole flat on moderate slopes</li></ul>
+                </article>
+                <article class="info-card tech-card reveal" data-cat="snow">
+                    <span class="tag">Snow &amp; Ice</span>
+                    <h3>Ice Axe Self-Arrest</h3>
+                    <p>If you slip on a snow slope, you have only seconds to stop. Self-arrest means rolling onto the axe and driving its pick into the snow with your body weight.</p>
+                    <ul><li>Hold the axe in the uphill hand</li><li>Keep crampon points up while arresting</li><li>Practise on a safe slope with a clear run-out</li></ul>
+                </article>
+                <article class="info-card tech-card reveal" data-cat="snow">
+                    <span class="tag">Snow &amp; Ice</span>
+                    <h3>Ice Climbing</h3>
+                    <p>Steep ice is climbed with two ice tools and front points. Protection comes from ice screws that the leader places and the second removes.</p>
+                    <ul><li>Swing from the elbow, not the shoulder</li><li>Read ice colour and texture for quality</li></ul>
+                </article>
+                <article class="info-card tech-card reveal" data-cat="glacier">
+                    <span class="tag">Glacier</span>
+                    <h3>Roped Glacier Travel</h3>
+                    <p>Glaciers hide crevasses under snow bridges. Teams of two to four climbers tie into one rope with spacing between them, so a fall into a crevasse can be held.</p>
+                    <ul><li>Keep the rope fairly tight between climbers</li><li>Cross snow bridges early in the day when they are frozen</li><li>Probe suspicious snow with an axe or pole</li></ul>
+                </article>
+                <article class="info-card tech-card reveal" data-cat="glacier">
+                    <span class="tag">Glacier</span>
+                    <h3>Crevasse Rescue</h3>
+                    <p>If a partner falls, the team builds an anchor in the snow and uses a pulley system, often a "Z-pulley", to haul them out.</p>
+                    <ul><li>Carry prusiks, slings and pulleys on every glacier</li><li>Practise the system before the trip, not during it</li></ul>
+                </article>
+                <article class="info-card tech-card reveal" data-cat="altitude">
+                    <span class="tag">High Altitude</span>
+                    <h3>Acclimatization</h3>
+                    <p>The body needs days to adapt to thin air. The golden rule is "climb high, sleep low": go higher during the day and return lower to sleep.</p>
+                    <ul><li>Above 3,000 m, raise your sleeping height by only 300&ndash;500 m a day</li><li>Add a rest day every 3&ndash;4 days</li><li>Descend if symptoms get worse</li></ul>
+                </article>
+                <article class="info-card tech-card reveal" data-cat="altitude">
+                    <span class="tag">High Altitude</span>
+                    <h3>Fixed-Line Ascending</h3>
+                    <p>On big expedition routes, ropes are fixed to the mountain. Climbers clip in and slide a mechanical ascender (often called a jumar) up the line.</p>
+                    <ul><li>Always stay clipped in with a safety lanyard</li><li>Clip past each anchor before unclipping</li><li>Never trust an old rope without checking it</li></ul>
+                </article>
+                <article class="info-card tech-card reveal" data-cat="nav">
+                    <span class="tag">Navigation</span>
+                    <h3>Map, Compass &amp; GPS</h3>
+                    <p>Cloud and snow can hide every landmark within minutes. Climbers must be able to find their position and follow a bearing without relying on a phone.</p>
+                    <ul><li>Read contour lines to understand slope and terrain</li><li>Set a bearing before visibility drops</li><li>Carry spare batteries for GPS devices</li></ul>
+                </article>
+            </div>
+            <p class="empty-note" id="techEmpty" hidden>No techniques in this group.</p>
+        </section>
+
+        <section class="section" id="calls">
+            <div class="wrap split">
+                <div class="prose reveal">
+                    <p class="eyebrow">CLEAR COMMUNICATION</p>
+                    <h2>Climbing Calls.</h2>
+                    <p>Wind, distance and rock walls make it hard to hear. Climbing partners use short, standard calls so there is never any doubt about what is happening on the rope.</p>
+                    <p>Agree on the calls before you start, and always answer a call so your partner knows it was heard.</p>
+                    <a href="safety.html" class="text-link">More Safety Guidelines &#8599;</a>
+                </div>
+                <div class="table-wrap reveal">
+                    <table class="data-table calls-table">
+                        <thead>
+                            <tr><th scope="col">Call</th><th scope="col">Who says it</th><th scope="col">Meaning</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><th scope="row">"On belay?"</th><td>Climber</td><td>Are you ready to belay me?</td></tr>
+                            <tr><th scope="row">"Belay on."</th><td>Belayer</td><td>I am ready and holding the rope.</td></tr>
+                            <tr><th scope="row">"Climbing."</th><td>Climber</td><td>I am starting to climb.</td></tr>
+                            <tr><th scope="row">"Climb on."</th><td>Belayer</td><td>Go ahead, I have you.</td></tr>
+                            <tr><th scope="row">"Take!"</th><td>Climber</td><td>Pull the rope tight and hold me.</td></tr>
+                            <tr><th scope="row">"Rock!"</th><td>Anyone</td><td>Something is falling. Protect your head.</td></tr>
+                            <tr><th scope="row">"Off belay."</th><td>Climber</td><td>I am safe, you can stop belaying.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="section-heading reveal">
+                <p class="eyebrow">HOW TO LEARN</p>
+                <h2>A Safe Learning Path.</h2>
+                <p>Most climbers follow a path like this over several seasons. Do not skip steps.</p>
+            </div>
+
+            <ol class="path wrap">
+                <li class="reveal"><b>1</b><div><h3>Hiking &amp; Scrambling</h3><p>Build fitness, learn to read the weather and move confidently on rough ground.</p></div></li>
+                <li class="reveal"><b>2</b><div><h3>Indoor &amp; Rock Climbing</h3><p>Learn knots, belaying and movement on rock with an instructor or a club.</p></div></li>
+                <li class="reveal"><b>3</b><div><h3>Snow Skills Course</h3><p>Practise crampons, ice axe self-arrest and avalanche awareness on a supervised slope.</p></div></li>
+                <li class="reveal"><b>4</b><div><h3>Glacier &amp; Alpine Routes</h3><p>Climb easy glaciated peaks in roped teams and practise crevasse rescue.</p></div></li>
+                <li class="reveal"><b>5</b><div><h3>High-Altitude Expedition</h3><p>Only after years of experience: acclimatization, expedition logistics and leadership.</p></div></li>
+            </ol>
+        </section>
+
+        <section class="cta-section">
+            <div class="reveal">
+                <p class="eyebrow">FIND AN INSTRUCTOR</p>
+                <h2>Learn With A Club.</h2>
+                <p>Mountaineering clubs and national federations run courses for every level. Find one near you on our interactive map.</p>
+                <div class="button-row">
+                    <a href="clubs.html" class="btn btn-primary">Find Clubs Near Me &#8599;</a>
+                    <a href="hazards.html" class="btn btn-outline">Know The Hazards</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="ticker" aria-label="Live date, time and location">
+        <div class="ticker-label"><i></i><b>LIVE</b></div>
+        <div class="ticker-window">
+            <div class="ticker-track" aria-live="off"><span>ALPINE ASCENTS</span><span aria-hidden="true">ALPINE ASCENTS</span></div>
+        </div>
+        <button type="button" class="ticker-loc" id="tickerLocate">Share location</button>
+    </div>
+
+    <div class="mountain-divider" aria-hidden="true">
+        <svg viewBox="0 0 2400 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path class="m-back" d="M0,140 L0,95 L90,60 L170,80 L260,35 L350,70 L450,25 L540,66 L640,48 L740,84 L850,30 L950,70 L1050,45 L1130,78 L1200,95 L1290,60 L1370,80 L1460,35 L1550,70 L1650,25 L1740,66 L1840,48 L1940,84 L2050,30 L2150,70 L2250,45 L2330,78 L2400,95 L2400,140 Z"/><path class="m-mid" d="M0,140 L0,110 L120,70 L210,95 L330,55 L430,92 L560,40 L660,88 L780,60 L880,100 L1000,52 L1100,90 L1200,110 L1320,70 L1410,95 L1530,55 L1630,92 L1760,40 L1860,88 L1980,60 L2080,100 L2200,52 L2300,90 L2400,110 L2400,140 Z"/><path class="m-front" d="M0,140 L0,125 L100,100 L200,118 L310,90 L420,120 L520,98 L640,124 L760,96 L880,122 L980,102 L1100,124 L1200,125 L1300,100 L1400,118 L1510,90 L1620,120 L1720,98 L1840,124 L1960,96 L2080,122 L2180,102 L2300,124 L2400,125 L2400,140 Z"/></svg>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <a href="../index.html" class="logo" aria-label="Alpine Ascents home">
+                    <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 48 44"><path class="lm-b" d="M19 42 32.5 17 46 42z"/><path class="lm-cap" d="m28.6 24.2 3.9-7.2 3.9 7.2-1.9-1.2-2 1.7-2-1.7z"/><path class="lm-a" fill-rule="evenodd" d="M2 42 18 6l16 36h-7.2l-2.6-6H11.8l-2.6 6zM18 24.5l-4.1 8.5h8.2z"/><path class="lm-snow" d="m13.3 16.6 2.4-1.9 2.3 2.2 2.3-2.2 2.4 1.9"/></svg></span>
+                    <span class="logo-text"><span class="logo-name">ALPINE<br>ASCENTS</span><span class="logo-tag">THE MOUNTAINS ARE CALLING</span></span>
+                </a>
+                <p>Detailed, honest information about mountaineering: its history, styles, techniques, hazards, records and the people who keep the sport alive.</p>
+                <span class="footer-motto">EXPLORE RESPONSIBLY · RESPECT THE MOUNTAINS</span>
+            </div>
+            <div>
+                <h4>Mountaineering</h4>
+                <ul class="footer-links">
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="adventures.html">Types & Styles</a></li>
+                    <li><a href="techniques.html" class="is-current">Techniques</a></li>
+                    <li><a href="records.html">Records</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Safety</h4>
+                <ul class="footer-links">
+                    <li><a href="safety.html">Safety Guidelines</a></li>
+                    <li><a href="hazards.html">Hazards</a></li>
+                    <li><a href="sheltering.html">Sheltering</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Community</h4>
+                <ul class="footer-links">
+                    <li><a href="about%20us.html">About Us</a></li>
+                    <li><a href="clubs.html">Clubs & Camps</a></li>
+                    <li><a href="news.html">Latest News</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="contact%20us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact-col">
+                <h4>Get In Touch</h4>
+                <ul class="footer-contact">
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Karachi, Pakistan</span></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@alpineascents.example">info@alpineascents.example</a></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+923211234567">+92 321 1234567</a></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Mon to Sat, 9:00 am to 6:00 pm</span></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/alpineascents.pk" target="_blank" rel="noopener" aria-label="Instagram @alpineascents.pk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
+                    <a href="https://www.facebook.com/alpineascents.pk" target="_blank" rel="noopener" aria-label="Facebook alpineascents.pk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8.5a.5.5 0 0 1 .5-.5z"/></svg><span>Facebook</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Alpine Ascents. Educational project by Group D.</p>
+            <a href="#top" class="to-top">Back to top &uarr;</a>
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=8"></script>
+    <script src="../js/techniques.js?v=8"></script>
+
+</body>
+</html>

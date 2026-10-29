@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Alpine Ascents</title>
+    <meta name="description" content="Explore our mountain photo and video gallery: snow-covered peaks, turquoise lakes, thundering waterfalls, starlit campsites and wild trekking trails.">
+    <meta name="theme-color" content="#1a1f24">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1f24'/%3E%3Cg transform='translate%288 10%29'%3E%3Cpath d='M19 42 32.5 17 46 42z' fill='%232f7f8c'/%3E%3Cpath fill-rule='evenodd' fill='%239fd2da' d='M2 42 18 6l16 36h-7.2l-2.6-6H11.8l-2.6 6zM18 24.5l-4.1 8.5h8.2z'/%3E%3Cpath d='m13.3 16.6 2.4-1.9 2.3 2.2 2.3-2.2 2.4 1.9' fill='none' stroke='%231a1f24' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Instrument+Serif&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css?v=8">
+    <link rel="stylesheet" href="../css/gallery.css?v=8">
+</head>
+
+<body id="top" class="page-gallery" data-root="../">
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="header">
+        <a href="../index.html" class="logo" aria-label="Alpine Ascents home">
+            <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 48 44"><path class="lm-b" d="M19 42 32.5 17 46 42z"/><path class="lm-cap" d="m28.6 24.2 3.9-7.2 3.9 7.2-1.9-1.2-2 1.7-2-1.7z"/><path class="lm-a" fill-rule="evenodd" d="M2 42 18 6l16 36h-7.2l-2.6-6H11.8l-2.6 6zM18 24.5l-4.1 8.5h8.2z"/><path class="lm-snow" d="m13.3 16.6 2.4-1.9 2.3 2.2 2.3-2.2 2.4 1.9"/></svg></span>
+            <span class="logo-text"><span class="logo-name">ALPINE<br>ASCENTS</span><span class="logo-tag">THE MOUNTAINS ARE CALLING</span></span>
+        </a>
+
+        <nav id="nav" class="site-nav" aria-label="Main">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about%20us.html">About Us</a></li>
+                <li class="nav-item has-dropdown">
+                    <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">Mountaineering <i class="caret" aria-hidden="true"></i></button>
+                    <ul class="dropdown">
+                        <li><a href="history.html"><strong>History</strong><small>From Mont Blanc to the 8,000ers</small></a></li>
+                        <li><a href="adventures.html"><strong>Types & Styles</strong><small>Adventures and climbing styles</small></a></li>
+                        <li><a href="techniques.html"><strong>Techniques</strong><small>Rope, snow, ice and altitude skills</small></a></li>
+                        <li><a href="records.html"><strong>Records</strong><small>Highest peaks and great achievements</small></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">Safety <i class="caret" aria-hidden="true"></i></button>
+                    <ul class="dropdown">
+                        <li><a href="safety.html"><strong>Safety Guidelines</strong><small>General guidelines for every climber</small></a></li>
+                        <li><a href="hazards.html"><strong>Hazards</strong><small>Know the risks before you go</small></a></li>
+                        <li><a href="sheltering.html"><strong>Sheltering</strong><small>Tents, huts, bivouacs and camps</small></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link is-current" href="gallery.html" aria-current="page">Gallery</a></li>
+                <li class="nav-item has-dropdown">
+                    <button type="button" class="nav-link" aria-expanded="false" aria-haspopup="true">Community <i class="caret" aria-hidden="true"></i></button>
+                    <ul class="dropdown">
+                        <li><a href="clubs.html"><strong>Clubs & Camps</strong><small>Organizations on a world map</small></a></li>
+                        <li><a href="news.html"><strong>Latest News</strong><small>New developments in the field</small></a></li>
+                        <li><a href="feedback.html"><strong>Feedback</strong><small>Tell us how we are doing</small></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-cta"><a class="btn btn-primary btn-small" href="contact%20us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="visitor-box" title="Visitor count">
+            <span class="visitor-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 20 6.5-11 4 6.5L16 12l5 8z"/><path d="m8 11.5 1.5 1.5 1.5-1.5"/></svg></span>
+            <div>
+                <small>VISITORS</small>
+                <strong id="visitorCount">11</strong>
+            </div>
+        </div>
+
+        <button id="menuToggle" class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+    </header>
+
+    <main id="main">
+
+        <section class="gallery-hero">
+            <div class="gallery-hero-videos" aria-hidden="true">
+                <video class="hero-video active" muted loop playsinline preload="auto" data-src="../videos/16058046-hd_1920_1080_30fps.mp4"></video>
+                <video class="hero-video" muted loop playsinline preload="none" data-src="../videos/15019075_3840_2160_25fps.mp4"></video>
+                <video class="hero-video" muted loop playsinline preload="none" data-src="../videos/13660273_3840_2160_25fps.mp4"></video>
+                <video class="hero-video" muted loop playsinline preload="none" data-src="../videos/15150501_3840_2160_25fps.mp4"></video>
+                <video class="hero-video" muted loop playsinline preload="none" data-src="../videos/12438510_3840_2160_24fps.mp4"></video>
+            </div>
+
+            <div class="gallery-hero-content">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><span aria-current="page">Gallery</span></li>
+                    </ol>
+                </nav>
+                <p class="eyebrow">WHERE THE MOUNTAINS SPEAK</p>
+                <h1>THE ADVENTURE<br>GALLERY<span>.</span></h1>
+                <p class="gallery-hero-text">
+                    From sunrise ridgelines to hidden waterfalls, step into the
+                    wild places that make every mountain journey unforgettable.
+                </p>
+
+                <div class="gallery-hero-buttons">
+                    <a href="#photos" class="btn btn-ghost">Browse Photos ↓</a>
+                    <a href="#videos" class="btn btn-ghost">Watch Videos ↓</a>
+                </div>
+
+                <div class="gallery-hero-bottom">
+                    <span>68 PHOTOS · 12 VIDEOS</span>
+                    <span id="heroCounter">01 / 05</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section photos-section" id="photos">
+            <div class="section-heading reveal">
+                <p class="eyebrow">THE PHOTO COLLECTION</p>
+                <h2>Through The Lens.</h2>
+                <p>Peaks, lakes, campsites and trails. Tap any photo to see it full size.</p>
+            </div>
+
+            <div class="filter-bar reveal" role="group" aria-label="Filter photos">
+                <button type="button" class="filter-btn active" data-filter="all">All Photos <em>68</em></button>
+                <button type="button" class="filter-btn" data-filter="peaks">Peaks <em>20</em></button>
+                <button type="button" class="filter-btn" data-filter="water">Lakes &amp; Waterfalls <em>23</em></button>
+                <button type="button" class="filter-btn" data-filter="camp">Camping <em>11</em></button>
+                <button type="button" class="filter-btn" data-filter="trek">Trekking &amp; Adventure <em>14</em></button>
+            </div>
+
+            <div class="photo-wall" id="photoWall">
+                <figure class="photo" data-cat="water" data-full="https://images.unsplash.com/photo-1556952428-b52ca0615754?auto=format&fit=crop&w=2400&q=80" data-title="Eibsee &amp; Zugspitze, Germany" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Eibsee &amp; Zugspitze, Germany">
+                    <img src="https://images.unsplash.com/photo-1556952428-b52ca0615754?auto=format&fit=crop&w=1200&q=80" alt="Eibsee &amp; Zugspitze, Germany" width="720" height="576" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Eibsee &amp; Zugspitze, Germany</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="peaks" data-full="https://images.unsplash.com/photo-1778003586047-69c68f764af5?auto=format&fit=crop&w=2400&q=80" data-title="Everest at Sunrise, Nepal" data-label="Peaks" tabindex="0" role="button" aria-label="Open photo: Everest at Sunrise, Nepal">
+                    <img src="https://images.unsplash.com/photo-1778003586047-69c68f764af5?auto=format&fit=crop&w=1200&q=80" alt="Everest at Sunrise, Nepal" width="720" height="480" loading="lazy">
+                    <figcaption><span>PEAKS</span><strong>Everest at Sunrise, Nepal</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="trek" data-full="https://images.unsplash.com/photo-1621414050946-1b936a78491f?auto=format&fit=crop&w=2400&q=80" data-title="Kilimanjaro Trek, Tanzania" data-label="Trekking &amp; Adventure" tabindex="0" role="button" aria-label="Open photo: Kilimanjaro Trek, Tanzania">
+                    <img src="https://images.unsplash.com/photo-1621414050946-1b936a78491f?auto=format&fit=crop&w=1200&q=80" alt="Kilimanjaro Trek, Tanzania" width="720" height="478" loading="lazy">
+                    <figcaption><span>TREKKING &AMP; ADVENTURE</span><strong>Kilimanjaro Trek, Tanzania</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="camp" data-full="https://images.unsplash.com/photo-1598313795136-a202370958af?auto=format&fit=crop&w=2400&q=80" data-title="Tents Under the Stars" data-label="Camping" tabindex="0" role="button" aria-label="Open photo: Tents Under the Stars">
+                    <img src="https://images.unsplash.com/photo-1598313795136-a202370958af?auto=format&fit=crop&w=1200&q=80" alt="Tents Under the Stars" width="720" height="480" loading="lazy">
+                    <figcaption><span>CAMPING</span><strong>Tents Under the Stars</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="https://images.unsplash.com/photo-1539667547529-84c607280d20?auto=format&fit=crop&w=2400&q=80" data-title="Moraine Lake, Canada" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Moraine Lake, Canada">
+                    <img src="https://images.unsplash.com/photo-1539667547529-84c607280d20?auto=format&fit=crop&w=1200&q=80" alt="Moraine Lake, Canada" width="720" height="485" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Moraine Lake, Canada</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="peaks" data-full="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=2400&q=80" data-title="Ama Dablam, Nepal" data-label="Peaks" tabindex="0" role="button" aria-label="Open photo: Ama Dablam, Nepal">
+                    <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1200&q=80" alt="Ama Dablam, Nepal" width="720" height="478" loading="lazy">
+                    <figcaption><span>PEAKS</span><strong>Ama Dablam, Nepal</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="trek" data-full="https://images.unsplash.com/photo-1692802039917-07ce2958bcb1?auto=format&fit=crop&w=2400&q=80" data-title="Tour du Mont Blanc, Alps" data-label="Trekking &amp; Adventure" tabindex="0" role="button" aria-label="Open photo: Tour du Mont Blanc, Alps">
+                    <img src="https://images.unsplash.com/photo-1692802039917-07ce2958bcb1?auto=format&fit=crop&w=1200&q=80" alt="Tour du Mont Blanc, Alps" width="720" height="960" loading="lazy">
+                    <figcaption><span>TREKKING &AMP; ADVENTURE</span><strong>Tour du Mont Blanc, Alps</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="https://images.unsplash.com/photo-1655173334282-ce18166da8d9?auto=format&fit=crop&w=2400&q=80" data-title="Riffelsee &amp; Matterhorn" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Riffelsee &amp; Matterhorn">
+                    <img src="https://images.unsplash.com/photo-1655173334282-ce18166da8d9?auto=format&fit=crop&w=1200&q=80" alt="Riffelsee &amp; Matterhorn" width="720" height="480" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Riffelsee &amp; Matterhorn</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="peaks" data-full="https://images.unsplash.com/photo-1538279288577-f2551fb138ba?auto=format&fit=crop&w=2400&q=80" data-title="Annapurna Range, Nepal" data-label="Peaks" tabindex="0" role="button" aria-label="Open photo: Annapurna Range, Nepal">
+                    <img src="https://images.unsplash.com/photo-1538279288577-f2551fb138ba?auto=format&fit=crop&w=1200&q=80" alt="Annapurna Range, Nepal" width="720" height="480" loading="lazy">
+                    <figcaption><span>PEAKS</span><strong>Annapurna Range, Nepal</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="camp" data-full="../images/pexels-ajaybhargavguduru-939723.jpg" data-title="Meadow Camp" data-label="Camping" tabindex="0" role="button" aria-label="Open photo: Meadow Camp">
+                    <img src="../images/pexels-ajaybhargavguduru-939723.jpg" alt="Meadow Camp" width="720" height="480" loading="lazy">
+                    <figcaption><span>CAMPING</span><strong>Meadow Camp</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="https://images.unsplash.com/photo-1509023464722-18d996393ca8?auto=format&fit=crop&w=2400&q=80" data-title="Mount Fuji by Night, Japan" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Mount Fuji by Night, Japan">
+                    <img src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?auto=format&fit=crop&w=1200&q=80" alt="Mount Fuji by Night, Japan" width="720" height="480" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Mount Fuji by Night, Japan</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="peaks" data-full="https://images.unsplash.com/photo-1604998103924-89e012e5265a?auto=format&fit=crop&w=2400&q=80" data-title="Dolomites Meadow, Italy" data-label="Peaks" tabindex="0" role="button" aria-label="Open photo: Dolomites Meadow, Italy">
+                    <img src="https://images.unsplash.com/photo-1604998103924-89e012e5265a?auto=format&fit=crop&w=1200&q=80" alt="Dolomites Meadow, Italy" width="720" height="480" loading="lazy">
+                    <figcaption><span>PEAKS</span><strong>Dolomites Meadow, Italy</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="trek" data-full="https://images.unsplash.com/photo-1777445364843-e9be30324685?auto=format&fit=crop&w=2400&q=80" data-title="Everest Base Camp, Nepal" data-label="Trekking &amp; Adventure" tabindex="0" role="button" aria-label="Open photo: Everest Base Camp, Nepal">
+                    <img src="https://images.unsplash.com/photo-1777445364843-e9be30324685?auto=format&fit=crop&w=1200&q=80" alt="Everest Base Camp, Nepal" width="720" height="480" loading="lazy">
+                    <figcaption><span>TREKKING &AMP; ADVENTURE</span><strong>Everest Base Camp, Nepal</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2400&q=80" data-title="Lago di Braies, Italy" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Lago di Braies, Italy">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80" alt="Lago di Braies, Italy" width="720" height="480" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Lago di Braies, Italy</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="peaks" data-full="https://images.unsplash.com/photo-1624375147958-678d727cc0c4?auto=format&fit=crop&w=2400&q=80" data-title="Grand Teton, USA" data-label="Peaks" tabindex="0" role="button" aria-label="Open photo: Grand Teton, USA">
+                    <img src="https://images.unsplash.com/photo-1624375147958-678d727cc0c4?auto=format&fit=crop&w=1200&q=80" alt="Grand Teton, USA" width="720" height="480" loading="lazy">
+                    <figcaption><span>PEAKS</span><strong>Grand Teton, USA</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="camp" data-full="../images/pexels-b-s-78158866-24650287.jpg" data-title="Winter Bivouac" data-label="Camping" tabindex="0" role="button" aria-label="Open photo: Winter Bivouac">
+                    <img src="../images/pexels-b-s-78158866-24650287.jpg" alt="Winter Bivouac" width="540" height="720" loading="lazy">
+                    <figcaption><span>CAMPING</span><strong>Winter Bivouac</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="https://images.unsplash.com/photo-1623423415485-1d36867376b6?auto=format&fit=crop&w=2400&q=80" data-title="Peyto Lake, Canada" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Peyto Lake, Canada">
+                    <img src="https://images.unsplash.com/photo-1623423415485-1d36867376b6?auto=format&fit=crop&w=1200&q=80" alt="Peyto Lake, Canada" width="720" height="480" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Peyto Lake, Canada</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="trek" data-full="https://images.unsplash.com/photo-1682024619121-aabb0305a496?auto=format&fit=crop&w=2400&q=80" data-title="Lakeside Summit, Patagonia" data-label="Trekking &amp; Adventure" tabindex="0" role="button" aria-label="Open photo: Lakeside Summit, Patagonia">
+                    <img src="https://images.unsplash.com/photo-1682024619121-aabb0305a496?auto=format&fit=crop&w=1200&q=80" alt="Lakeside Summit, Patagonia" width="720" height="480" loading="lazy">
+                    <figcaption><span>TREKKING &AMP; ADVENTURE</span><strong>Lakeside Summit, Patagonia</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="peaks" data-full="https://images.unsplash.com/photo-1637580980556-085dee659c7e?auto=format&fit=crop&w=2400&q=80" data-title="Fitz Roy at Dawn, Argentina" data-label="Peaks" tabindex="0" role="button" aria-label="Open photo: Fitz Roy at Dawn, Argentina">
+                    <img src="https://images.unsplash.com/photo-1637580980556-085dee659c7e?auto=format&fit=crop&w=1200&q=80" alt="Fitz Roy at Dawn, Argentina" width="720" height="480" loading="lazy">
+                    <figcaption><span>PEAKS</span><strong>Fitz Roy at Dawn, Argentina</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="https://images.unsplash.com/photo-1502943693086-33b5b1cfdf2f?auto=format&fit=crop&w=2400&q=80" data-title="Yosemite Falls, USA" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Yosemite Falls, USA">
+                    <img src="https://images.unsplash.com/photo-1502943693086-33b5b1cfdf2f?auto=format&fit=crop&w=1200&q=80" alt="Yosemite Falls, USA" width="720" height="1080" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Yosemite Falls, USA</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="camp" data-full="../images/pexels-cihanyuce-30482810.jpg" data-title="Dome Tent at Sunset" data-label="Camping" tabindex="0" role="button" aria-label="Open photo: Dome Tent at Sunset">
+                    <img src="../images/pexels-cihanyuce-30482810.jpg" alt="Dome Tent at Sunset" width="720" height="478" loading="lazy">
+                    <figcaption><span>CAMPING</span><strong>Dome Tent at Sunset</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="trek" data-full="https://images.unsplash.com/photo-1530738270955-2ed78de5c2a9?auto=format&fit=crop&w=2400&q=80" data-title="Mont Blanc Snow Ridge" data-label="Trekking &amp; Adventure" tabindex="0" role="button" aria-label="Open photo: Mont Blanc Snow Ridge">
+                    <img src="https://images.unsplash.com/photo-1530738270955-2ed78de5c2a9?auto=format&fit=crop&w=1200&q=80" alt="Mont Blanc Snow Ridge" width="720" height="1032" loading="lazy">
+                    <figcaption><span>TREKKING &AMP; ADVENTURE</span><strong>Mont Blanc Snow Ridge</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="peaks" data-full="https://images.unsplash.com/photo-1596016691838-70260f1e21c6?auto=format&fit=crop&w=2400&q=80" data-title="Matterhorn by Starlight, Switzerland" data-label="Peaks" tabindex="0" role="button" aria-label="Open photo: Matterhorn by Starlight, Switzerland">
+                    <img src="https://images.unsplash.com/photo-1596016691838-70260f1e21c6?auto=format&fit=crop&w=1200&q=80" alt="Matterhorn by Starlight, Switzerland" width="720" height="480" loading="lazy">
+                    <figcaption><span>PEAKS</span><strong>Matterhorn by Starlight, Switzerland</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="https://images.unsplash.com/photo-1517079810336-d39e72287591?auto=format&fit=crop&w=2400&q=80" data-title="Seealpsee, Switzerland" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Seealpsee, Switzerland">
+                    <img src="https://images.unsplash.com/photo-1517079810336-d39e72287591?auto=format&fit=crop&w=1200&q=80" alt="Seealpsee, Switzerland" width="720" height="1080" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Seealpsee, Switzerland</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="https://images.unsplash.com/photo-1493724798364-c4ca5e3f5fd3?auto=format&fit=crop&w=2400&q=80" data-title="Fitz Roy &amp; Laguna, Patagonia" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Fitz Roy &amp; Laguna, Patagonia">
+                    <img src="https://images.unsplash.com/photo-1493724798364-c4ca5e3f5fd3?auto=format&fit=crop&w=1200&q=80" alt="Fitz Roy &amp; Laguna, Patagonia" width="720" height="492" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Fitz Roy &amp; Laguna, Patagonia</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="peaks" data-full="https://images.unsplash.com/photo-1486911278844-a81c5267e227?auto=format&fit=crop&w=2400&q=80" data-title="Khumbu Himalaya, Nepal" data-label="Peaks" tabindex="0" role="button" aria-label="Open photo: Khumbu Himalaya, Nepal">
+                    <img src="https://images.unsplash.com/photo-1486911278844-a81c5267e227?auto=format&fit=crop&w=1200&q=80" alt="Khumbu Himalaya, Nepal" width="720" height="480" loading="lazy">
+                    <figcaption><span>PEAKS</span><strong>Khumbu Himalaya, Nepal</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="trek" data-full="https://images.unsplash.com/photo-1597250861267-429663f244a8?auto=format&fit=crop&w=2400&q=80" data-title="Alpine Ridge Climb" data-label="Trekking &amp; Adventure" tabindex="0" role="button" aria-label="Open photo: Alpine Ridge Climb">
+                    <img src="https://images.unsplash.com/photo-1597250861267-429663f244a8?auto=format&fit=crop&w=1200&q=80" alt="Alpine Ridge Climb" width="720" height="1080" loading="lazy">
+                    <figcaption><span>TREKKING &AMP; ADVENTURE</span><strong>Alpine Ridge Climb</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="camp" data-full="../images/pexels-lostintespace-18097113.jpg" data-title="Camp Above the Clouds" data-label="Camping" tabindex="0" role="button" aria-label="Open photo: Camp Above the Clouds">
+                    <img src="../images/pexels-lostintespace-18097113.jpg" alt="Camp Above the Clouds" width="540" height="720" loading="lazy">
+                    <figcaption><span>CAMPING</span><strong>Camp Above the Clouds</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="https://images.unsplash.com/photo-1780314332097-fa770b33ed7f?auto=format&fit=crop&w=2400&q=80" data-title="Lauterbrunnen Falls, Switzerland" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Lauterbrunnen Falls, Switzerland">
+                    <img src="https://images.unsplash.com/photo-1780314332097-fa770b33ed7f?auto=format&fit=crop&w=1200&q=80" alt="Lauterbrunnen Falls, Switzerland" width="720" height="1080" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Lauterbrunnen Falls, Switzerland</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="peaks" data-full="https://images.unsplash.com/photo-1599551528722-6b6d968512a2?auto=format&fit=crop&w=2400&q=80" data-title="Mount Rainier at Dusk, USA" data-label="Peaks" tabindex="0" role="button" aria-label="Open photo: Mount Rainier at Dusk, USA">
+                    <img src="https://images.unsplash.com/photo-1599551528722-6b6d968512a2?auto=format&fit=crop&w=1200&q=80" alt="Mount Rainier at Dusk, USA" width="720" height="480" loading="lazy">
+                    <figcaption><span>PEAKS</span><strong>Mount Rainier at Dusk, USA</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="https://images.unsplash.com/photo-1516051733211-2492fab1d3a5?auto=format&fit=crop&w=2400&q=80" data-title="Hooker Valley, Aoraki / Mount Cook" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Hooker Valley, Aoraki / Mount Cook">
+                    <img src="https://images.unsplash.com/photo-1516051733211-2492fab1d3a5?auto=format&fit=crop&w=1200&q=80" alt="Hooker Valley, Aoraki / Mount Cook" width="720" height="492" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Hooker Valley, Aoraki / Mount Cook</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="trek" data-full="https://images.unsplash.com/photo-1745059177820-ddca8ef74f41?auto=format&fit=crop&w=2400&q=80" data-title="Himalayan Ridge Trek, Nepal" data-label="Trekking &amp; Adventure" tabindex="0" role="button" aria-label="Open photo: Himalayan Ridge Trek, Nepal">
+                    <img src="https://images.unsplash.com/photo-1745059177820-ddca8ef74f41?auto=format&fit=crop&w=1200&q=80" alt="Himalayan Ridge Trek, Nepal" width="720" height="900" loading="lazy">
+                    <figcaption><span>TREKKING &AMP; ADVENTURE</span><strong>Himalayan Ridge Trek, Nepal</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="peaks" data-full="https://images.unsplash.com/photo-1611963060099-e08069953044?auto=format&fit=crop&w=2400&q=80" data-title="Denali, Alaska" data-label="Peaks" tabindex="0" role="button" aria-label="Open photo: Denali, Alaska">
+                    <img src="https://images.unsplash.com/photo-1611963060099-e08069953044?auto=format&fit=crop&w=1200&q=80" alt="Denali, Alaska" width="720" height="480" loading="lazy">
+                    <figcaption><span>PEAKS</span><strong>Denali, Alaska</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="camp" data-full="../images/pexels-montedhar-35746259.jpg" data-title="Snow Camp" data-label="Camping" tabindex="0" role="button" aria-label="Open photo: Snow Camp">
+                    <img src="../images/pexels-montedhar-35746259.jpg" alt="Snow Camp" width="540" height="720" loading="lazy">
+                    <figcaption><span>CAMPING</span><strong>Snow Camp</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="https://images.unsplash.com/photo-1787946177979-a7e6b53ac16f?auto=format&fit=crop&w=2400&q=80" data-title="Sk&oacute;gafoss, Iceland" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Sk&oacute;gafoss, Iceland">
+                    <img src="https://images.unsplash.com/photo-1787946177979-a7e6b53ac16f?auto=format&fit=crop&w=1200&q=80" alt="Sk&oacute;gafoss, Iceland" width="720" height="406" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Sk&oacute;gafoss, Iceland</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="peaks" data-full="https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&w=2400&q=80" data-title="Mount Fuji, Japan" data-label="Peaks" tabindex="0" role="button" aria-label="Open photo: Mount Fuji, Japan">
+                    <img src="https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&w=1200&q=80" alt="Mount Fuji, Japan" width="720" height="480" loading="lazy">
+                    <figcaption><span>PEAKS</span><strong>Mount Fuji, Japan</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="trek" data-full="../images/pexels-dajana-reci-289671698-13860072.jpg" data-title="Suspension Bridge" data-label="Trekking &amp; Adventure" tabindex="0" role="button" aria-label="Open photo: Suspension Bridge">
+                    <img src="../images/pexels-dajana-reci-289671698-13860072.jpg" alt="Suspension Bridge" width="576" height="720" loading="lazy">
+                    <figcaption><span>TREKKING &AMP; ADVENTURE</span><strong>Suspension Bridge</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="https://images.unsplash.com/photo-1622307053412-5404f0c427c0?auto=format&fit=crop&w=2400&q=80" data-title="Oeschinensee, Switzerland" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Oeschinensee, Switzerland">
+                    <img src="https://images.unsplash.com/photo-1622307053412-5404f0c427c0?auto=format&fit=crop&w=1200&q=80" alt="Oeschinensee, Switzerland" width="720" height="480" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Oeschinensee, Switzerland</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="peaks" data-full="https://images.unsplash.com/photo-1545161296-d9c2c241f2ad?auto=format&fit=crop&w=2400&q=80" data-title="The Matterhorn, Switzerland" data-label="Peaks" tabindex="0" role="button" aria-label="Open photo: The Matterhorn, Switzerland">
+                    <img src="https://images.unsplash.com/photo-1545161296-d9c2c241f2ad?auto=format&fit=crop&w=1200&q=80" alt="The Matterhorn, Switzerland" width="720" height="1080" loading="lazy">
+                    <figcaption><span>PEAKS</span><strong>The Matterhorn, Switzerland</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="https://images.unsplash.com/photo-1683209564837-abcf80dc982b?auto=format&fit=crop&w=2400&q=80" data-title="Kirkjufell Falls, Iceland" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Kirkjufell Falls, Iceland">
+                    <img src="https://images.unsplash.com/photo-1683209564837-abcf80dc982b?auto=format&fit=crop&w=1200&q=80" alt="Kirkjufell Falls, Iceland" width="720" height="480" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Kirkjufell Falls, Iceland</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="camp" data-full="../images/pexels-photodanyadaat-18542283.jpg" data-title="A Window to the Valley" data-label="Camping" tabindex="0" role="button" aria-label="Open photo: A Window to the Valley">
+                    <img src="../images/pexels-photodanyadaat-18542283.jpg" alt="A Window to the Valley" width="477" height="720" loading="lazy">
+                    <figcaption><span>CAMPING</span><strong>A Window to the Valley</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="trek" data-full="../images/pexels-dave-tombi-48516388-7762028.jpg" data-title="Face to Face with the Matterhorn" data-label="Trekking &amp; Adventure" tabindex="0" role="button" aria-label="Open photo: Face to Face with the Matterhorn">
+                    <img src="../images/pexels-dave-tombi-48516388-7762028.jpg" alt="Face to Face with the Matterhorn" width="480" height="720" loading="lazy">
+                    <figcaption><span>TREKKING &AMP; ADVENTURE</span><strong>Face to Face with the Matterhorn</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="peaks" data-full="https://images.unsplash.com/photo-1534106474077-f9e9c6f5a47c?auto=format&fit=crop&w=2400&q=80" data-title="Seceda, Dolomites" data-label="Peaks" tabindex="0" role="button" aria-label="Open photo: Seceda, Dolomites">
+                    <img src="https://images.unsplash.com/photo-1534106474077-f9e9c6f5a47c?auto=format&fit=crop&w=1200&q=80" alt="Seceda, Dolomites" width="720" height="480" loading="lazy">
+                    <figcaption><span>PEAKS</span><strong>Seceda, Dolomites</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="https://images.unsplash.com/photo-1655173334250-df969d381d8d?auto=format&fit=crop&w=2400&q=80" data-title="Gazing at the Matterhorn" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Gazing at the Matterhorn">
+                    <img src="https://images.unsplash.com/photo-1655173334250-df969d381d8d?auto=format&fit=crop&w=1200&q=80" alt="Gazing at the Matterhorn" width="720" height="480" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Gazing at the Matterhorn</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="https://images.unsplash.com/photo-1715356758153-6d58ae44e8fe?auto=format&fit=crop&w=2400&q=80" data-title="Torres del Paine, Chile" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Torres del Paine, Chile">
+                    <img src="https://images.unsplash.com/photo-1715356758153-6d58ae44e8fe?auto=format&fit=crop&w=1200&q=80" alt="Torres del Paine, Chile" width="720" height="406" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Torres del Paine, Chile</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="peaks" data-full="https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?auto=format&fit=crop&w=2400&q=80" data-title="Kilimanjaro, Tanzania" data-label="Peaks" tabindex="0" role="button" aria-label="Open photo: Kilimanjaro, Tanzania">
+                    <img src="https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?auto=format&fit=crop&w=1200&q=80" alt="Kilimanjaro, Tanzania" width="720" height="482" loading="lazy">
+                    <figcaption><span>PEAKS</span><strong>Kilimanjaro, Tanzania</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="trek" data-full="../images/pexels-lorenzo-castellino-61076802-15733483.jpg" data-title="Standing at the Edge" data-label="Trekking &amp; Adventure" tabindex="0" role="button" aria-label="Open photo: Standing at the Edge">
+                    <img src="../images/pexels-lorenzo-castellino-61076802-15733483.jpg" alt="Standing at the Edge" width="480" height="720" loading="lazy">
+                    <figcaption><span>TREKKING &AMP; ADVENTURE</span><strong>Standing at the Edge</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="camp" data-full="../images/pexels-qaarif-9353950%20%281%29.jpg" data-title="Lakeside Camp" data-label="Camping" tabindex="0" role="button" aria-label="Open photo: Lakeside Camp">
+                    <img src="../images/pexels-qaarif-9353950%20%281%29.jpg" alt="Lakeside Camp" width="720" height="429" loading="lazy">
+                    <figcaption><span>CAMPING</span><strong>Lakeside Camp</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="https://images.unsplash.com/photo-1595131264251-63b7cf3b8564?auto=format&fit=crop&w=2400&q=80" data-title="Grand Teton Lake, USA" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Grand Teton Lake, USA">
+                    <img src="https://images.unsplash.com/photo-1595131264251-63b7cf3b8564?auto=format&fit=crop&w=1200&q=80" alt="Grand Teton Lake, USA" width="720" height="480" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Grand Teton Lake, USA</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="peaks" data-full="https://images.unsplash.com/photo-1600588545434-1bcc100f7d58?auto=format&fit=crop&w=2400&q=80" data-title="Mont Blanc, France" data-label="Peaks" tabindex="0" role="button" aria-label="Open photo: Mont Blanc, France">
+                    <img src="https://images.unsplash.com/photo-1600588545434-1bcc100f7d58?auto=format&fit=crop&w=1200&q=80" alt="Mont Blanc, France" width="720" height="480" loading="lazy">
+                    <figcaption><span>PEAKS</span><strong>Mont Blanc, France</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="trek" data-full="../images/pexels-lureofadventure-10771706.jpg" data-title="Cliff Path" data-label="Trekking &amp; Adventure" tabindex="0" role="button" aria-label="Open photo: Cliff Path">
+                    <img src="../images/pexels-lureofadventure-10771706.jpg" alt="Cliff Path" width="480" height="720" loading="lazy">
+                    <figcaption><span>TREKKING &AMP; ADVENTURE</span><strong>Cliff Path</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="https://images.unsplash.com/photo-1561134643-668f9057cce4?auto=format&fit=crop&w=2400&q=80" data-title="Valley of the Ten Peaks, Canada" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Valley of the Ten Peaks, Canada">
+                    <img src="https://images.unsplash.com/photo-1561134643-668f9057cce4?auto=format&fit=crop&w=1200&q=80" alt="Valley of the Ten Peaks, Canada" width="720" height="540" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Valley of the Ten Peaks, Canada</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="camp" data-full="../images/pexels-ravikant-14099470.jpg" data-title="Base Camp Valley" data-label="Camping" tabindex="0" role="button" aria-label="Open photo: Base Camp Valley">
+                    <img src="../images/pexels-ravikant-14099470.jpg" alt="Base Camp Valley" width="540" height="720" loading="lazy">
+                    <figcaption><span>CAMPING</span><strong>Base Camp Valley</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="peaks" data-full="../images/pexels-brian-de-karma-806590-1677344.jpg" data-title="Granite Peak" data-label="Peaks" tabindex="0" role="button" aria-label="Open photo: Granite Peak">
+                    <img src="../images/pexels-brian-de-karma-806590-1677344.jpg" alt="Granite Peak" width="720" height="480" loading="lazy">
+                    <figcaption><span>PEAKS</span><strong>Granite Peak</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="../images/pexels-afhamhmsyri-38813761.jpg" data-title="Autumn Creek" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Autumn Creek">
+                    <img src="../images/pexels-afhamhmsyri-38813761.jpg" alt="Autumn Creek" width="405" height="720" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Autumn Creek</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="trek" data-full="../images/pexels-nui-malama-169330637-11346095.jpg" data-title="Paragliders Aloft" data-label="Trekking &amp; Adventure" tabindex="0" role="button" aria-label="Open photo: Paragliders Aloft">
+                    <img src="../images/pexels-nui-malama-169330637-11346095.jpg" alt="Paragliders Aloft" width="480" height="720" loading="lazy">
+                    <figcaption><span>TREKKING &AMP; ADVENTURE</span><strong>Paragliders Aloft</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="peaks" data-full="../images/pexels-jplenio-19038595.jpg" data-title="Storm Clearing Valley" data-label="Peaks" tabindex="0" role="button" aria-label="Open photo: Storm Clearing Valley">
+                    <img src="../images/pexels-jplenio-19038595.jpg" alt="Storm Clearing Valley" width="720" height="405" loading="lazy">
+                    <figcaption><span>PEAKS</span><strong>Storm Clearing Valley</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="../images/pexels-enginakyurt-32614590.jpg" data-title="Veil of Green Falls" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Veil of Green Falls">
+                    <img src="../images/pexels-enginakyurt-32614590.jpg" alt="Veil of Green Falls" width="540" height="720" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Veil of Green Falls</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="camp" data-full="../images/pexels-sandesh-raj-bhatta-314917901-39985730.jpg" data-title="Orange Tents at Dawn" data-label="Camping" tabindex="0" role="button" aria-label="Open photo: Orange Tents at Dawn">
+                    <img src="../images/pexels-sandesh-raj-bhatta-314917901-39985730.jpg" alt="Orange Tents at Dawn" width="480" height="720" loading="lazy">
+                    <figcaption><span>CAMPING</span><strong>Orange Tents at Dawn</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="peaks" data-full="../images/pexels-lindsey-k-846449-1729910.jpg" data-title="Cliffs and Evergreens" data-label="Peaks" tabindex="0" role="button" aria-label="Open photo: Cliffs and Evergreens">
+                    <img src="../images/pexels-lindsey-k-846449-1729910.jpg" alt="Cliffs and Evergreens" width="514" height="720" loading="lazy">
+                    <figcaption><span>PEAKS</span><strong>Cliffs and Evergreens</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="../images/pexels-matreding-12993550.jpg" data-title="Quiet Lake Paddle" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Quiet Lake Paddle">
+                    <img src="../images/pexels-matreding-12993550.jpg" alt="Quiet Lake Paddle" width="720" height="480" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Quiet Lake Paddle</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="trek" data-full="../images/pexels-oskar-gross-1074333632-34341420.jpg" data-title="Summit Ridge Walk" data-label="Trekking &amp; Adventure" tabindex="0" role="button" aria-label="Open photo: Summit Ridge Walk">
+                    <img src="../images/pexels-oskar-gross-1074333632-34341420.jpg" alt="Summit Ridge Walk" width="480" height="720" loading="lazy">
+                    <figcaption><span>TREKKING &AMP; ADVENTURE</span><strong>Summit Ridge Walk</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="peaks" data-full="../images/pexels-luca-cavallin-2163876900-39360611.jpg" data-title="Above the Cloud Sea" data-label="Peaks" tabindex="0" role="button" aria-label="Open photo: Above the Cloud Sea">
+                    <img src="../images/pexels-luca-cavallin-2163876900-39360611.jpg" alt="Above the Cloud Sea" width="720" height="480" loading="lazy">
+                    <figcaption><span>PEAKS</span><strong>Above the Cloud Sea</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="../images/pexels-robshumski-5555181%20%281%29.jpg" data-title="Hidden Waterfall" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Hidden Waterfall">
+                    <img src="../images/pexels-robshumski-5555181%20%281%29.jpg" alt="Hidden Waterfall" width="639" height="720" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Hidden Waterfall</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="camp" data-full="../images/pexels-vasilykot-9166687.jpg" data-title="Waking to Mountains" data-label="Camping" tabindex="0" role="button" aria-label="Open photo: Waking to Mountains">
+                    <img src="../images/pexels-vasilykot-9166687.jpg" alt="Waking to Mountains" width="576" height="720" loading="lazy">
+                    <figcaption><span>CAMPING</span><strong>Waking to Mountains</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="trek" data-full="../images/pexels-pheo-neto-3713099-5546426.jpg" data-title="Golden Wing" data-label="Trekking &amp; Adventure" tabindex="0" role="button" aria-label="Open photo: Golden Wing">
+                    <img src="../images/pexels-pheo-neto-3713099-5546426.jpg" alt="Golden Wing" width="478" height="720" loading="lazy">
+                    <figcaption><span>TREKKING &AMP; ADVENTURE</span><strong>Golden Wing</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="peaks" data-full="../images/pexels-maria-m-1070886292-33603099.jpg" data-title="Green Hills &amp; Limestone" data-label="Peaks" tabindex="0" role="button" aria-label="Open photo: Green Hills &amp; Limestone">
+                    <img src="../images/pexels-maria-m-1070886292-33603099.jpg" alt="Green Hills &amp; Limestone" width="720" height="540" loading="lazy">
+                    <figcaption><span>PEAKS</span><strong>Green Hills &amp; Limestone</strong></figcaption>
+                </figure>
+                <figure class="photo" data-cat="water" data-full="../images/pexels-samime-eroglu-852630836-34474873.jpg" data-title="Thundering Falls" data-label="Lakes &amp; Waterfalls" tabindex="0" role="button" aria-label="Open photo: Thundering Falls">
+                    <img src="../images/pexels-samime-eroglu-852630836-34474873.jpg" alt="Thundering Falls" width="480" height="720" loading="lazy">
+                    <figcaption><span>LAKES &AMP; WATERFALLS</span><strong>Thundering Falls</strong></figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="videos-section" id="videos">
+            <div class="videos-inner">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">THE VIDEO COLLECTION</p>
+                    <h2>Mountains In Motion.</h2>
+                    <p>Drifting clouds, roaring waterfalls and golden ridgelines. Press play and feel the mountains move.</p>
+                </div>
+
+                <div class="video-wall" id="videoWall">
+                <article class="video-card" data-video="../videos/16058046-hd_1920_1080_30fps.mp4" data-poster="" data-title="Sunrise Over the Ridge" tabindex="0" role="button" aria-label="Play video: Sunrise Over the Ridge">
+                    <video src="../videos/16058046-hd_1920_1080_30fps.mp4#t=1" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                    <span class="play-badge" aria-hidden="true">▶</span>
+                    <span class="video-time">0:10</span>
+                    <div class="video-info"><span>VIDEO</span><h3>Sunrise Over the Ridge</h3></div>
+                </article>
+                <article class="video-card" data-video="../videos/15019075_3840_2160_25fps.mp4" data-poster="" data-title="Snow Ridge Panorama" tabindex="0" role="button" aria-label="Play video: Snow Ridge Panorama">
+                    <video src="../videos/15019075_3840_2160_25fps.mp4#t=1" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                    <span class="play-badge" aria-hidden="true">▶</span>
+                    <span class="video-time">0:10</span>
+                    <div class="video-info"><span>VIDEO</span><h3>Snow Ridge Panorama</h3></div>
+                </article>
+                <article class="video-card" data-video="../videos/13660273_3840_2160_25fps.mp4" data-poster="" data-title="Storm Over the Peaks" tabindex="0" role="button" aria-label="Play video: Storm Over the Peaks">
+                    <video src="../videos/13660273_3840_2160_25fps.mp4#t=1" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                    <span class="play-badge" aria-hidden="true">▶</span>
+                    <span class="video-time">0:05</span>
+                    <div class="video-info"><span>VIDEO</span><h3>Storm Over the Peaks</h3></div>
+                </article>
+                <article class="video-card" data-video="../videos/15150501_3840_2160_25fps.mp4" data-poster="" data-title="The Lone Summit" tabindex="0" role="button" aria-label="Play video: The Lone Summit">
+                    <video src="../videos/15150501_3840_2160_25fps.mp4#t=1" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                    <span class="play-badge" aria-hidden="true">▶</span>
+                    <span class="video-time">0:07</span>
+                    <div class="video-info"><span>VIDEO</span><h3>The Lone Summit</h3></div>
+                </article>
+                <article class="video-card" data-video="../videos/12438510_3840_2160_24fps.mp4" data-poster="" data-title="Glacier at Dusk" tabindex="0" role="button" aria-label="Play video: Glacier at Dusk">
+                    <video src="../videos/12438510_3840_2160_24fps.mp4#t=1" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                    <span class="play-badge" aria-hidden="true">▶</span>
+                    <span class="video-time">0:10</span>
+                    <div class="video-info"><span>VIDEO</span><h3>Glacier at Dusk</h3></div>
+                </article>
+                <article class="video-card" data-video="../videos/12426698-uhd_3840_2160_30fps.mp4" data-poster="" data-title="Sea of Clouds" tabindex="0" role="button" aria-label="Play video: Sea of Clouds">
+                    <video src="../videos/12426698-uhd_3840_2160_30fps.mp4#t=1" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                    <span class="play-badge" aria-hidden="true">▶</span>
+                    <span class="video-time">0:15</span>
+                    <div class="video-info"><span>VIDEO</span><h3>Sea of Clouds</h3></div>
+                </article>
+                <article class="video-card" data-video="../videos/14942937_3840_2160_60fps.mp4" data-poster="" data-title="Into the Mist" tabindex="0" role="button" aria-label="Play video: Into the Mist">
+                    <video src="../videos/14942937_3840_2160_60fps.mp4#t=1" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                    <span class="play-badge" aria-hidden="true">▶</span>
+                    <span class="video-time">0:15</span>
+                    <div class="video-info"><span>VIDEO</span><h3>Into the Mist</h3></div>
+                </article>
+                <article class="video-card" data-video="../videos/12022117_1920_1080_30fps.mp4" data-poster="" data-title="Mountain Stream" tabindex="0" role="button" aria-label="Play video: Mountain Stream">
+                    <video src="../videos/12022117_1920_1080_30fps.mp4#t=1" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                    <span class="play-badge" aria-hidden="true">▶</span>
+                    <span class="video-time">0:07</span>
+                    <div class="video-info"><span>VIDEO</span><h3>Mountain Stream</h3></div>
+                </article>
+                <article class="video-card" data-video="../videos/16799423_1920_1080_59fps.mp4" data-poster="" data-title="Alpine Meadow" tabindex="0" role="button" aria-label="Play video: Alpine Meadow">
+                    <video src="../videos/16799423_1920_1080_59fps.mp4#t=1" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                    <span class="play-badge" aria-hidden="true">▶</span>
+                    <span class="video-time">0:10</span>
+                    <div class="video-info"><span>VIDEO</span><h3>Alpine Meadow</h3></div>
+                </article>
+                <article class="video-card" data-video="../videos/13142558_1080_1920_30fps.mp4" data-poster="" data-title="Above the Clouds" tabindex="0" role="button" aria-label="Play video: Above the Clouds">
+                    <video src="../videos/13142558_1080_1920_30fps.mp4#t=1" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                    <span class="play-badge" aria-hidden="true">▶</span>
+                    <span class="video-time">0:15</span>
+                    <div class="video-info"><span>VIDEO</span><h3>Above the Clouds</h3></div>
+                </article>
+                <article class="video-card" data-video="../videos/13252265_1080_1920_60fps.mp4" data-poster="" data-title="Cliffside Cascade" tabindex="0" role="button" aria-label="Play video: Cliffside Cascade">
+                    <video src="../videos/13252265_1080_1920_60fps.mp4#t=1" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                    <span class="play-badge" aria-hidden="true">▶</span>
+                    <span class="video-time">0:11</span>
+                    <div class="video-info"><span>VIDEO</span><h3>Cliffside Cascade</h3></div>
+                </article>
+                <article class="video-card" data-video="../videos/19181145-uhd_2160_3840_30fps.mp4" data-poster="" data-title="Hidden Falls" tabindex="0" role="button" aria-label="Play video: Hidden Falls">
+                    <video src="../videos/19181145-uhd_2160_3840_30fps.mp4#t=1" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                    <span class="play-badge" aria-hidden="true">▶</span>
+                    <span class="video-time">0:12</span>
+                    <div class="video-info"><span>VIDEO</span><h3>Hidden Falls</h3></div>
+                </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-cta reveal">
+            <p class="eyebrow">YOUR TURN</p>
+            <h2>Your Story Starts<br>On The Trail.</h2>
+            <p>Pick an adventure, pack your gear and let the mountains do the rest.</p>
+            <a href="adventures.html" class="btn btn-primary">Explore Adventures ↗</a>
+        </section>
+
+    </main>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Media viewer" hidden>
+        <button type="button" class="lb-close" id="lbClose" aria-label="Close">✕</button>
+        <button type="button" class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+        <button type="button" class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
+        <div class="lb-stage" id="lbStage"></div>
+        <div class="lb-caption"><span id="lbLabel"></span><strong id="lbTitle"></strong><em id="lbCount"></em></div>
+    </div>
+
+    </main>
+
+    <div class="ticker" aria-label="Live date, time and location">
+        <div class="ticker-label"><i></i><b>LIVE</b></div>
+        <div class="ticker-window">
+            <div class="ticker-track" aria-live="off"><span>ALPINE ASCENTS</span><span aria-hidden="true">ALPINE ASCENTS</span></div>
+        </div>
+        <button type="button" class="ticker-loc" id="tickerLocate">Share location</button>
+    </div>
+
+    <div class="mountain-divider" aria-hidden="true">
+        <svg viewBox="0 0 2400 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path class="m-back" d="M0,140 L0,95 L90,60 L170,80 L260,35 L350,70 L450,25 L540,66 L640,48 L740,84 L850,30 L950,70 L1050,45 L1130,78 L1200,95 L1290,60 L1370,80 L1460,35 L1550,70 L1650,25 L1740,66 L1840,48 L1940,84 L2050,30 L2150,70 L2250,45 L2330,78 L2400,95 L2400,140 Z"/><path class="m-mid" d="M0,140 L0,110 L120,70 L210,95 L330,55 L430,92 L560,40 L660,88 L780,60 L880,100 L1000,52 L1100,90 L1200,110 L1320,70 L1410,95 L1530,55 L1630,92 L1760,40 L1860,88 L1980,60 L2080,100 L2200,52 L2300,90 L2400,110 L2400,140 Z"/><path class="m-front" d="M0,140 L0,125 L100,100 L200,118 L310,90 L420,120 L520,98 L640,124 L760,96 L880,122 L980,102 L1100,124 L1200,125 L1300,100 L1400,118 L1510,90 L1620,120 L1720,98 L1840,124 L1960,96 L2080,122 L2180,102 L2300,124 L2400,125 L2400,140 Z"/></svg>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <a href="../index.html" class="logo" aria-label="Alpine Ascents home">
+                    <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 48 44"><path class="lm-b" d="M19 42 32.5 17 46 42z"/><path class="lm-cap" d="m28.6 24.2 3.9-7.2 3.9 7.2-1.9-1.2-2 1.7-2-1.7z"/><path class="lm-a" fill-rule="evenodd" d="M2 42 18 6l16 36h-7.2l-2.6-6H11.8l-2.6 6zM18 24.5l-4.1 8.5h8.2z"/><path class="lm-snow" d="m13.3 16.6 2.4-1.9 2.3 2.2 2.3-2.2 2.4 1.9"/></svg></span>
+                    <span class="logo-text"><span class="logo-name">ALPINE<br>ASCENTS</span><span class="logo-tag">THE MOUNTAINS ARE CALLING</span></span>
+                </a>
+                <p>Detailed, honest information about mountaineering: its history, styles, techniques, hazards, records and the people who keep the sport alive.</p>
+                <span class="footer-motto">EXPLORE RESPONSIBLY · RESPECT THE MOUNTAINS</span>
+            </div>
+            <div>
+                <h4>Mountaineering</h4>
+                <ul class="footer-links">
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="adventures.html">Types & Styles</a></li>
+                    <li><a href="techniques.html">Techniques</a></li>
+                    <li><a href="records.html">Records</a></li>
+                    <li><a href="gallery.html" class="is-current">Gallery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Safety</h4>
+                <ul class="footer-links">
+                    <li><a href="safety.html">Safety Guidelines</a></li>
+                    <li><a href="hazards.html">Hazards</a></li>
+                    <li><a href="sheltering.html">Sheltering</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Community</h4>
+                <ul class="footer-links">
+                    <li><a href="about%20us.html">About Us</a></li>
+                    <li><a href="clubs.html">Clubs & Camps</a></li>
+                    <li><a href="news.html">Latest News</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="contact%20us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact-col">
+                <h4>Get In Touch</h4>
+                <ul class="footer-contact">
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Karachi, Pakistan</span></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@alpineascents.example">info@alpineascents.example</a></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+923211234567">+92 321 1234567</a></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Mon to Sat, 9:00 am to 6:00 pm</span></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/alpineascents.pk" target="_blank" rel="noopener" aria-label="Instagram @alpineascents.pk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
+                    <a href="https://www.facebook.com/alpineascents.pk" target="_blank" rel="noopener" aria-label="Facebook alpineascents.pk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8.5a.5.5 0 0 1 .5-.5z"/></svg><span>Facebook</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Alpine Ascents. Educational project by Group D.</p>
+            <a href="#top" class="to-top">Back to top &uarr;</a>
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=8"></script>
+    <script src="../js/gallery.js?v=8"></script>
+
+</body>
+</html>

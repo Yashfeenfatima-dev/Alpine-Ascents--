@@ -1,0 +1,35 @@
+.pillars { grid-template-columns: repeat(3, 1fr); }
+
+.warning-section { display: grid; grid-template-columns: 1.2fr .8fr; gap: clamp(1.8rem, 5vw, 4rem); align-items: center; }
+.warning-content h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
+.warning-content > p { color: var(--slate); max-width: 560px; }
+.stage-list { display: grid; gap: .9rem; margin-top: 1.6rem; }
+.stage { background: var(--snow); border: 1px solid var(--mist); border-left: 6px solid; border-radius: 14px; padding: 1rem 1.3rem; box-shadow: 0 6px 18px -10px rgba(26, 31, 36, .25); transition: transform .35s var(--ease); }
+.stage:hover { transform: translateX(5px); }
+.stage h3 { margin: 0 0 .3rem; font-size: 1.1rem; }
+.stage p { margin: 0 0 .4rem; color: var(--slate); line-height: 1.6; }
+.stage strong { font-size: .92rem; }
+.stage-mild { border-left-color: var(--ok); }
+.stage-moderate { border-left-color: var(--warn); }
+.stage-severe { border-left-color: var(--danger); }
+.warning-image { border-radius: 26px; overflow: hidden; box-shadow: var(--shadow); }
+.warning-image img { width: 100%; height: 100%; max-height: 540px; object-fit: cover; }
+
+.checklist-box { max-width: 780px; margin: 0 auto; background: var(--snow); border: 1px solid var(--fog); border-radius: 24px; padding: clamp(1.3rem, 4vw, 2.2rem); box-shadow: var(--shadow); }
+.progress-bar { height: 10px; background: var(--mist); border-radius: 999px; overflow: hidden; }
+.progress-bar span { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--teal), var(--teal-dark)); border-radius: 999px; transition: width .45s var(--ease); }
+#progressText { margin: .7rem 0 1.2rem; font-weight: 600; color: var(--ink); }
+.check-items { margin: 0 0 1.5rem; }
+.check-items li { border-bottom: 1px solid var(--mist); }
+.check-items label { display: flex; gap: .9rem; align-items: center; padding: .85rem .3rem; cursor: pointer; line-height: 1.5; transition: background .25s, padding-left .3s var(--ease); border-radius: 10px; }
+.check-items label:hover { background: var(--paper); padding-left: .7rem; }
+.check-items input { width: 20px; height: 20px; accent-color: var(--teal); flex-shrink: 0; }
+.check-items li.done label { color: var(--slate); text-decoration: line-through; }
+
+@media (max-width: 960px) {
+  .pillars { grid-template-columns: repeat(2, 1fr); }
+  .warning-section { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .pillars { grid-template-columns: 1fr; }
+}
